@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+
+<head>
+<meta charset="UTF-8">
+<!-- Optimized with WP Meteor v2.3.10 - https://wordpress.org/plugins/wp-meteor/ --><script>var _wpmeteor={"exclude":true,"rdelay":86400000,"v":"2.3.10"};if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]wpmeteordisable/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?wpmeteordisable=1"}else{document.location.href=href.replace("#","?wpmeteordisable=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&wpmeteordisable=1"}else{document.location.href=href.replace("#","&wpmeteordisable=1#")}}}}</script><script>!function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="/",n(n.s=0)}([function(t,e,n){t.exports=n(1)},function(t,e,n){"use strict";n.r(e);var r=new(function(){function t(){this.l=[]}var e=t.prototype;return e.emit=function(t,e){void 0===e&&(e=null),this.l[t]&&this.l[t].forEach((function(t){return t(e)}))},e.on=function(t,e){var n;(n=this.l)[t]||(n[t]=[]),this.l[t].push(e)},e.off=function(t,e){this.l[t]=(this.l[t]||[]).filter((function(t){return t!==e}))},t}()),o=new Date,i=document,a=function(){function t(){this.known=[]}var e=t.prototype;return e.init=function(){var t,e=this,n=!1,o=function(t){if(!n&&t&&t.fn&&!t.__wpmeteor){var r=function(e){return i.addEventListener("DOMContentLoaded",(function(n){e.bind(i)(t,n)})),this};e.known.push([t,t.fn.ready,t.fn.init.prototype.ready]),t.fn.ready=r,t.fn.init.prototype.ready=r,t.__wpmeteor=!0}return t};window.jQuery&&(t=o(window.jQuery)),Object.defineProperty(window,"jQuery",{get:function(){return t},set:function(e){return t=o(e)}}),r.on("l",(function(){return n=!0}))},e.unmock=function(){this.known.forEach((function(t){var e=t[0],n=t[1],r=t[2];e.fn.ready=n,e.fn.init.prototype.ready=r}))},t}(),c={};!function(t,e){try{var n=Object.defineProperty({},e,{get:function(){c[e]=!0}});t.addEventListener(e,null,n),t.removeEventListener(e,null,n)}catch(t){}}(window,"passive");var u=c,f=window,d=document,s=["mouseover","keydown","touchmove","touchend","wheel"],l=["mouseover","mouseout","touchstart","touchmove","touchend","click"],p="data-wpmeteor-",v=function(){function t(){}return t.prototype.init=function(t){var e=!1,n=!1,o=function t(o){e||(e=!0,s.forEach((function(e){return d.body.removeEventListener(e,t,u)})),clearTimeout(n),location.href.match(/wpmeteornopreload/)||r.emit("pre"),r.emit("fi"))},i=function(t){var e=new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0});return Object.defineProperty(e,"target",{writable:!1,value:t.target}),e};t<1e4&&r.on("i",(function(){e||(n=setTimeout(o,t))}));var a=[],c=function(t){t.target&&"dispatchEvent"in t.target&&("click"===t.type?(t.preventDefault(),t.stopPropagation(),a.push(i(t))):"touchmove"!==t.type&&a.push(t),t.target.setAttribute(p+t.type,!0))};r.on("l",(function(){var t;for(l.forEach((function(t){return f.removeEventListener(t,c)}));t=a.shift();){var e=t.target;e.getAttribute(p+"touchstart")&&e.getAttribute(p+"touchend")&&!e.getAttribute(p+"click")?(e.getAttribute(p+"touchmove")||(e.removeAttribute(p+"touchmove"),a.push(i(t))),e.removeAttribute(p+"touchstart"),e.removeAttribute(p+"touchend")):e.removeAttribute(p+t.type),e.dispatchEvent(t)}}));d.addEventListener("DOMContentLoaded",(function t(){s.forEach((function(t){return d.body.addEventListener(t,o,u)})),l.forEach((function(t){return f.addEventListener(t,c)})),d.removeEventListener("DOMContentLoaded",t)}))},t}(),m=document,h=m.createElement("span");h.setAttribute("id","elementor-device-mode"),h.setAttribute("class","elementor-screen-only");var y=window,b=document,g=b.documentElement,w=function(t){return t.getAttribute("class")||""},E=function(t,e){return t.setAttribute("class",e)},L=function(){window.addEventListener("load",(function(){var t=(m.body.appendChild(h),getComputedStyle(h,":after").content.replace(/"/g,"")),e=Math.max(g.clientWidth||0,y.innerWidth||0),n=Math.max(g.clientHeight||0,y.innerHeight||0),o=["_animation_"+t,"animation_"+t,"_animation","_animation","animation"];Array.from(b.querySelectorAll(".elementor-invisible")).forEach((function(t){var i=t.getBoundingClientRect();if(i.top+y.scrollY<=n&&i.left+y.scrollX<e)try{var a=JSON.parse(t.getAttribute("data-settings"));if(a.trigger_source)return;for(var c,u=a._animation_delay||a.animation_delay||0,f=0;f<o.length;f++)if(a[o[f]]){o[f],c=a[o[f]];break}if(c){var d=w(t),s="none"===c?d:d+" animated "+c,l=setTimeout((function(){E(t,s.replace(/\belementor\-invisible\b/,"")),o.forEach((function(t){return delete a[t]})),t.setAttribute("data-settings",JSON.stringify(a))}),u);r.on("fi",(function(){clearTimeout(l),E(t,w(t).replace(new RegExp("\b"+c+"\b"),""))}))}}catch(t){console.error(t)}}))}))},S=document,A="querySelectorAll",O="data-in-mega_smartmenus",_="DOMContentLoaded",j="readystatechange",P="message",k=console.error;!function(t,e,n,i,c,u,f,d,s){var l,p,m=t.constructor.name+"::",h=e.constructor.name+"::",y=function(e,n){n=n||t;for(var r=0;r<this.length;r++)e.call(n,this[r],r,this)};"NodeList"in t&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=y),"HTMLCollection"in t&&!HTMLCollection.prototype.forEach&&(HTMLCollection.prototype.forEach=y),_wpmeteor["elementor-animations"]&&L(),_wpmeteor["elementor-pp"]&&function(){var t=S.createElement("div");t.innerHTML='<span class="sub-arrow --wp-meteor"><i class="fa" aria-hidden="true"><\/i><\/span>';var e=t.firstChild;S.addEventListener("DOMContentLoaded",(function(){Array.from(S[A](".pp-advanced-menu ul")).forEach((function(t){if(!t.getAttribute(O)){(t.getAttribute("class")||"").match(/\bmega\-menu\b/)&&t[A]("ul").forEach((function(t){t.setAttribute(O,!0)}));var n=function(t){for(var e=[];t=t.previousElementSibling;)e.push(t);return e}(t),r=n.filter((function(t){return t})).filter((function(t){return"A"===t.tagName})).pop();if(r||(r=n.map((function(t){return Array.from(t[A]("a"))})).filter((function(t){return t})).flat().pop()),r){var o=e.cloneNode(!0);r.appendChild(o),new MutationObserver((function(t){t.forEach((function(t){t.addedNodes.forEach((function(t){if(1===t.nodeType&&"SPAN"===t.tagName)try{r.removeChild(o)}catch(t){}}))}))})).observe(r,{childList:!0})}}}))}))}();var b,g,w=[],E=[],x={},C=!1,T=!1,M=setTimeout;var N=e[n].bind(e),R=e[i].bind(e),H=t[n].bind(t),D=t[i].bind(t);"undefined"!=typeof EventTarget&&(b=EventTarget.prototype.addEventListener,g=EventTarget.prototype.removeEventListener,N=b.bind(e),R=g.bind(e),H=b.bind(t),D=g.bind(t));var z,q=e.createElement.bind(e),B=e.__proto__.__lookupGetter__("readyState").bind(e);Object.defineProperty(e,"readyState",{get:function(){return z||B()},set:function(t){return z=t}});var Q=function(t){return E.filter((function(e,n){var r=e[0],o=(e[1],e[2]);if(!(t.indexOf(r.type)<0)){o||(o=r.target);try{for(var i=o.constructor.name+"::"+r.type,a=0;a<x[i].length;a++){if(x[i][a])if(!W[i+"::"+n+"::"+a])return!0}}catch(t){}}})).length},W={},I=function(t){E.forEach((function(n,r){var o=n[0],i=n[1],a=n[2];if(!(t.indexOf(o.type)<0)){a||(a=o.target);try{var c=a.constructor.name+"::"+o.type;if((x[c]||[]).length)for(var u=0;u<x[c].length;u++){var f=x[c][u];if(f){var d=c+"::"+r+"::"+u;if(!W[d]){W[d]=!0,e.readyState=i;try{f.hasOwnProperty("prototype")&&f.prototype.constructor!==f?f(o):f.bind(a)(o)}catch(t){k(t,f)}}}}}catch(t){k(t)}}}))};N(_,(function(t){E.push([t,e.readyState,e])})),N(j,(function(t){E.push([t,e.readyState,e])})),H(_,(function(n){E.push([n,e.readyState,t])})),H(d,(function(n){E.push([n,e.readyState,t]),G||I([_,j,P,d])}));var J=function(n){E.push([n,e.readyState,t])};H(P,J),r.on("fi",(function(){T=!0,G=!0,e.readyState="loading",M(X)}));H(d,(function t(){C=!0,T&&!G&&(e.readyState="loading",M(X)),D(d,t)})),(new v).init(_wpmeteor.rdelay);var F=new a;F.init();var G=!1,X=function n(){var o=w.shift();if(o)if(o[c]("data-src"))o.hasAttribute("data-async")?(U(o),M(n)):U(o,n);else if("javascript/blocked"==o.type)U(o),M(n);else if(o.hasAttribute("data-wpmeteor-onload")){var i=o[c]("data-wpmeteor-onload");try{new Function(i).call(o)}catch(t){k(t)}M(n)}else M(n);else if(Q([_,j,P]))I([_,j,P]),M(n);else if(T&&C)if(Q([d,P]))I([d,P]),M(n);else{if(t.RocketLazyLoadScripts)try{RocketLazyLoadScripts.run()}catch(t){k(t)}e.readyState="complete",D(P,J),(x[m+"message"]||[]).forEach((function(t){H(P,t)})),F.unmock(),Z=N,$=R,nt=H,rt=D,G=!1,setTimeout((function(){return r.emit("l")}))}else G=!1},Y=function(t){for(var n=e.createElement("SCRIPT"),r=t.attributes,o=r.length-1;o>=0;o--)n.setAttribute(r[o].name,r[o].value);return n.bypass=!0,n.type=t.hasAttribute("data-wpmeteor-module")?"module":"text/javascript",(t.text||"").match(/^\s*class RocketLazyLoadScripts/)?n.text=t.text.replace(/^\s*class RocketLazyLoadScripts/,"window.RocketLazyLoadScripts=class").replace("RocketLazyLoadScripts.run();",""):n.text=t.text,n[f]("data-wpmeteor-after"),n},K=function(t,e){var n=t.parentNode;n&&n.replaceChild(e,t)},U=function(t,e){if(t[c]("data-src")){var r=Y(t),o=b?b.bind(r):r[n].bind(r);if(e){var i=function(){return M(e)};o(d,i),o(s,i)}r.src=t[c]("data-src"),r[f]("data-src"),K(t,r)}else"javascript/blocked"===t.type?K(t,Y(t)):onLoad&&onLoad()},V=function(t,e){var n=(x[t]||[]).indexOf(e);if(n>=0)return x[t][n]=void 0,!0},Z=function(t,e){if(e&&(t===_||t===j)){var n=h+t;return x[n]=x[n]||[],void x[n].push(e)}for(var r=arguments.length,o=new Array(r>2?r-2:0),i=2;i<r;i++)o[i-2]=arguments[i];return N.apply(void 0,[t,e].concat(o))},$=function(t,e){t===_&&V(h+t,e);return R(t,e)};Object.defineProperties(e,((l={})[n]={get:function(){return Z},set:function(){return Z}},l[i]={get:function(){return $},set:function(){return $}},l)),r.on("pre",(function(){return w.forEach((function(t){var n=t[c]("data-src");if(n){var r=q("link");r.rel="pre"+d,r.as="script",r.href=n,r.crossorigin=!0,e.head.appendChild(r)}}))})),N(_,(function(){e.querySelectorAll("script[data-wpmeteor-after]").forEach((function(t){return w.push(t)}));var t=["link"].map((function(t){return t+"[data-wpmeteor-onload]"})).join(",");e.querySelectorAll(t).forEach((function(t){return w.push(t)}))}));var tt=function(t){if(e.currentScript)try{var n=e.currentScript.parentElement,r=e.currentScript.nextSibling,i=document.createElement("div");i.innerHTML=t,Array.from(i.childNodes).forEach((function(t){"SCRIPT"===t.nodeName?n.insertBefore(Y(t),r):n.insertBefore(t,r)}))}catch(t){console.error(t)}else k((new Date-o)/1e3,"document.currentScript not set",t)},et=function(t){return tt(t+"\n")};Object.defineProperties(e,{write:{get:function(){return tt},set:function(t){return tt=t}},writeln:{get:function(){return et},set:function(t){return et=t}}});var nt=function(t,e){if(e&&(t===d||t===_||t===P)){var n=t===_?h+t:m+t;return x[n]=x[n]||[],void x[n].push(e)}for(var r=arguments.length,o=new Array(r>2?r-2:0),i=2;i<r;i++)o[i-2]=arguments[i];return H.apply(void 0,[t,e].concat(o))},rt=function(t,e){t===d&&V(t===_?h+t:m+t,e);return D(t,e)};Object.defineProperties(t,((p={})[n]={get:function(){return nt},set:function(){return nt}},p[i]={get:function(){return rt},set:function(){return rt}},p));var ot=function(t){var e;return{get:function(){return e},set:function(n){return e&&V(t,n),x[t]=x[t]||[],x[t].push(n),e=n}}},it=ot(m+d);Object.defineProperty(t,"onload",it),N(_,(function(){Object.defineProperty(e.body,"onload",it)})),Object.defineProperty(e,"onreadystatechange",ot(h+j)),Object.defineProperty(t,"onmessage",ot(m+P));var at=1,ct=function(){--at||r.emit("i")};H(d,(function t(){M((function(){e.querySelectorAll("img").forEach((function(t){if(!t.complete&&(t.currentSrc||t.src)&&"lazy"==!(t.loading||"").toLowerCase()||(r=t.getBoundingClientRect(),o=window.innerHeight||document.documentElement.clientHeight,i=window.innerWidth||document.documentElement.clientWidth,r.top>=-1*o*1&&r.left>=-1*i*1&&r.bottom<=2*o&&r.right<=2*i)){var e=new Image;e[n](d,ct),e[n](s,ct),e.src=t.currentSrc||t.src,at++}var r,o,i})),ct()})),D(d,t)}));var ut=Object.defineProperty;Object.defineProperty=function(n,r,o){return n===t&&["jQuery","onload"].indexOf(r)>=0||(n===e||n===e.body)&&["readyState","write"].indexOf(r)>=0?n:ut(n,r,o)},Object.defineProperties=function(t,e){for(var n in e)Object.defineProperty(t,n,e[n]);return t}}(window,document,"addEventListener","removeEventListener","getAttribute",0,"removeAttribute","load","error")}]);
+</script>
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="preload" as="style" href="https://goodhealthall.com/wp-content/themes/neve/assets/css/style-legacy.min.css?ver=3.0.6" data-wpacu-preload-css-basic="1">
+<link rel="preload" as="script" href="https://goodhealthall.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" data-wpacu-preload-js="1">
+
+
+<title>7 Major Side Effects Of Consuming Too Many Jujubes - Good Health All</title>
+<meta name="description" content="Jujuba or jujube fruit is a species of the Ziziphus genus and belongs to the buckthorn family.  They are native to Southern Asia but are now grown in many">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://goodhealthall.com/side-effects-of-consuming-too-many-jujubes/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="7 Major Side Effects Of Consuming Too Many Jujubes - Good Health All">
+<meta property="og:description" content="Jujuba or jujube fruit is a species of the Ziziphus genus and belongs to the buckthorn family.  They are native to Southern Asia but are now grown in many">
+<meta property="og:url" content="https://goodhealthall.com/side-effects-of-consuming-too-many-jujubes/">
+<meta property="og:site_name" content="Good Health All">
+<meta property="article:publisher" content="https://www.facebook.com/goodhealthall">
+<meta property="article:author" content="https://www.facebook.com/bharatsharma2016">
+<meta property="article:tag" content="health and beauty">
+<meta property="article:section" content="Healthy Fruits">
+<meta property="og:updated_time" content="2021-07-09T12:17:19+05:30">
+<meta property="og:image" content="https://goodhealthall.com/wp-content/uploads/2018/09/Side-Effects-of-Eating-Too-Many-Jujubes.jpg">
+<meta property="og:image:width" content="960">
+<meta property="og:image:height" content="566">
+<meta property="og:image:alt" content="Side Effects of Eating Too Many Jujubes">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="article:published_time" content="2018-10-02IST08:51:55+05:30">
+<meta property="article:modified_time" content="2021-07-09IST12:17:19+05:30">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="7 Major Side Effects Of Consuming Too Many Jujubes - Good Health All">
+<meta name="twitter:description" content="Jujuba or jujube fruit is a species of the Ziziphus genus and belongs to the buckthorn family.  They are native to Southern Asia but are now grown in many">
+<meta name="twitter:site" content="@GHA_articles">
+<meta name="twitter:creator" content="@GHA_articles">
+<meta name="twitter:image" content="https://goodhealthall.com/wp-content/uploads/2018/09/Side-Effects-of-Eating-Too-Many-Jujubes.jpg">
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://goodhealthall.com/#organization","name":"Good Health All","logo":{"@type":"ImageObject","@id":"https://goodhealthall.com/#logo","url":"https://goodhealthall.com/wp-content/uploads/2018/03/GoodHealthAll.jpg","caption":"Good Health All","inLanguage":"en-US"}},{"@type":"WebSite","@id":"https://goodhealthall.com/#website","url":"https://goodhealthall.com","name":"Good Health All","publisher":{"@id":"https://goodhealthall.com/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://goodhealthall.com/wp-content/uploads/2018/09/Side-Effects-of-Eating-Too-Many-Jujubes.jpg","url":"https://goodhealthall.com/wp-content/uploads/2018/09/Side-Effects-of-Eating-Too-Many-Jujubes.jpg","width":"960","height":"566","caption":"Side Effects of Eating Too Many Jujubes","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://goodhealthall.com/side-effects-of-consuming-too-many-jujubes/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://goodhealthall.com","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://goodhealthall.com/side-effects-of-consuming-too-many-jujubes/","name":"7 Major Side Effects of Consuming Too Many Jujubes"}}]},{"@type":"Person","@id":"https://goodhealthall.com/side-effects-of-consuming-too-many-jujubes/#author","name":"Bharat Sharma","image":{"@type":"ImageObject","@id":"http://1.gravatar.com/avatar/a500c21cbee215053efcfe6b4c8ddfbb?s=96&amp;d=mm&amp;r=g","url":"http://1.gravatar.com/avatar/a500c21cbee215053efcfe6b4c8ddfbb?s=96&amp;d=mm&amp;r=g","caption":"Bharat Sharma","inLanguage":"en-US"},"worksFor":{"@id":"https://goodhealthall.com/#organization"}},{"@type":"WebPage","@id":"https://goodhealthall.com/side-effects-of-consuming-too-many-jujubes/#webpage","url":"https://goodhealthall.com/side-effects-of-consuming-too-many-jujubes/","name":"7 Major Side Effects Of Consuming Too Many Jujubes - Good Health All","datePublished":"2018-10-02T08:51:55+05:30","dateModified":"2021-07-09T12:17:19+05:30","author":{"@id":"https://goodhealthall.com/side-effects-of-consuming-too-many-jujubes/#author"},"isPartOf":{"@id":"https://goodhealthall.com/#website"},"primaryImageOfPage":{"@id":"https://goodhealthall.com/wp-content/uploads/2018/09/Side-Effects-of-Eating-Too-Many-Jujubes.jpg"},"inLanguage":"en-US","breadcrumb":{"@id":"https://goodhealthall.com/side-effects-of-consuming-too-many-jujubes/#breadcrumb"}},{"@type":"BlogPosting","headline":"7 Major Side Effects Of Consuming Too Many Jujubes - Good Health All","datePublished":"2018-10-02IST08:51:55+05:30","dateModified":"2021-07-09IST12:17:19+05:30","author":{"@type":"Person","name":"Bharat Sharma"},"name":"7 Major Side Effects Of Consuming Too Many Jujubes - Good Health All","@id":"https://goodhealthall.com/side-effects-of-consuming-too-many-jujubes/#schema-14385","isPartOf":{"@id":"https://goodhealthall.com/side-effects-of-consuming-too-many-jujubes/#webpage"},"publisher":{"@id":"https://goodhealthall.com/#organization"},"image":{"@id":"https://goodhealthall.com/wp-content/uploads/2018/09/Side-Effects-of-Eating-Too-Many-Jujubes.jpg"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://goodhealthall.com/side-effects-of-consuming-too-many-jujubes/#webpage"}}]}</script>
+
+
+<link rel="alternate" type="application/rss+xml" title="Good Health All &raquo; Feed" href="https://goodhealthall.com/feed/">
+<link data-wpacu-to-be-preloaded-basic="1" rel="stylesheet" id="neve-style-css" href="https://goodhealthall.com/wp-content/themes/neve/assets/css/style-legacy.min.css?ver=3.0.6" type="text/css" media="all">
+<style id="neve-style-inline-css" type="text/css">.header-menu-sidebar-inner li.menu-item-nav-search { display: none; }
+		[data-row-id] .row { display: flex !important; align-items: center; flex-wrap: unset;}
+		@media (max-width: 960px) { .footer--row .row { flex-direction: column; } }
+.nv-meta-list li.meta:not(:last-child):after { content:"/" }
+ .container{ max-width: 748px; } .has-neve-button-color-color{ color: var(--nv-primary-accent)!important; } .has-neve-button-color-background-color{ background-color: var(--nv-primary-accent)!important; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:718px } .button.button-primary, button, input[type=button], .btn, input[type="submit"], /* Buttons in navigation */ ul[id^="nv-primary-navigation"] li.button.button-primary > a, .menu li.button.button-primary > a, .wp-block-button.is-style-primary .wp-block-button__link, .wc-block-grid .wp-block-button .wp-block-button__link, form input[type="submit"], form button[type="submit"]{ background-color: var(--nv-primary-accent);color: #ffffff;border-radius:3px 3px 3px 3px;border:none;border-width:1px 1px 1px 1px; } .button.button-primary:hover, ul[id^="nv-primary-navigation"] li.button.button-primary > a:hover, .menu li.button.button-primary > a:hover, .wp-block-button.is-style-primary .wp-block-button__link:hover, .wc-block-grid .wp-block-button .wp-block-button__link:hover, form input[type="submit"]:hover, form button[type="submit"]:hover{ background-color: var(--nv-primary-accent);color: #ffffff; } .button.button-secondary:not(.secondary-default), .wp-block-button.is-style-secondary .wp-block-button__link{ background-color: var(--nv-primary-accent);color: #ffffff;border-radius:3px 3px 3px 3px;border:none;border-width:1px 1px 1px 1px; } .button.button-secondary.secondary-default{ background-color: var(--nv-primary-accent);color: #ffffff;border-radius:3px 3px 3px 3px;border:none;border-width:1px 1px 1px 1px; } .button.button-secondary:not(.secondary-default):hover, .wp-block-button.is-style-secondary .wp-block-button__link:hover{ background-color: var(--nv-primary-accent);color: #ffffff; } .button.button-secondary.secondary-default:hover{ background-color: var(--nv-primary-accent);color: #ffffff; } body, .site-title{ font-size: 16px; line-height: 1.6em; letter-spacing: 0px; font-weight: 400; text-transform: none; font-family: Arial, Helvetica, sans-serif, var(--nv-fallback-ff); } h1, .single h1.entry-title{ font-size: 1.5em; line-height: 1.6em; letter-spacing: 0px; font-weight: 600; text-transform: capitalize; font-family: Arial, Helvetica, sans-serif, var(--nv-fallback-ff); } h2{ font-size: 1.3em; line-height: 1.6em; letter-spacing: 0px; font-weight: 600; text-transform: capitalize; font-family: Arial, Helvetica, sans-serif, var(--nv-fallback-ff); } h3, .woocommerce-checkout h3{ font-size: 1.1em; line-height: 1.6em; letter-spacing: 0px; font-weight: 600; text-transform: capitalize; font-family: Arial, Helvetica, sans-serif, var(--nv-fallback-ff); } h4{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; font-weight: 600; text-transform: capitalize; font-family: Arial, Helvetica, sans-serif, var(--nv-fallback-ff); } h5{ font-size: 0.75em; line-height: 1.6em; letter-spacing: 0px; font-weight: 600; text-transform: capitalize; font-family: Arial, Helvetica, sans-serif, var(--nv-fallback-ff); } h6{ font-size: 0.75em; line-height: 1.6em; letter-spacing: 0px; font-weight: 600; text-transform: capitalize; font-family: Arial, Helvetica, sans-serif, var(--nv-fallback-ff); } .single h1.entry-title{ text-transform: none; } form input:read-write, form textarea, form select, form select option, form.wp-block-search input.wp-block-search__input, .widget select{ color: var(--nv-text-color); font-family: Arial, Helvetica, sans-serif, var(--nv-fallback-ff); } form.search-form input:read-write{ padding-right:45px !important; font-family: Arial, Helvetica, sans-serif, var(--nv-fallback-ff); } .header-top-inner,.header-top-inner a:not(.button),.header-top-inner .navbar-toggle{ color: var(--nv-text-color); } .header-top-inner .nv-icon svg,.header-top-inner .nv-contact-list svg{ fill: var(--nv-text-color); } .header-top-inner .icon-bar{ background-color: var(--nv-text-color); } .hfg_header .header-top-inner .nav-ul .sub-menu{ background-color: var(--nv-site-bg); } .hfg_header .header-top-inner{ background-color: var(--nv-site-bg); } .header-main-inner,.header-main-inner a:not(.button),.header-main-inner .navbar-toggle{ color: var(--nv-text-color); } .header-main-inner .nv-icon svg,.header-main-inner .nv-contact-list svg{ fill: var(--nv-text-color); } .header-main-inner .icon-bar{ background-color: var(--nv-text-color); } .hfg_header .header-main-inner .nav-ul .sub-menu{ background-color: rgba(0,0,0,0); } .hfg_header .header-main-inner{ background-color: rgba(0,0,0,0); } .builder-item--logo .site-logo img{ max-width: 120px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul .has-caret > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul .neve-mm-heading span,.builder-item--primary-menu .nav-menu-primary > .nav-ul .has-caret{ color: var(--nv-text-color); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a:after,.builder-item--primary-menu .nav-menu-primary > .nav-ul li > .has-caret > a:after{ background-color: var(--nv-secondary-accent); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item):hover > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret{ color: var(--nv-secondary-accent); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret svg{ fill: var(--nv-secondary-accent); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li.current-menu-item > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li.current_page_item > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li.current_page_item > .has-caret > a{ color: var(--nv-primary-accent); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li.current-menu-item > .has-caret svg{ fill: var(--nv-primary-accent); } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 20px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .header-menu-sidebar-inner .builder-item--primary-menu .primary-menu-ul.dropdowns-expanded > li > .sub-menu{ max-height: unset; } .header-menu-sidebar-inner .builder-item--primary-menu .primary-menu-ul.dropdowns-expanded > li > a > .caret-wrap,.header-menu-sidebar-inner .builder-item--primary-menu .primary-menu-ul.dropdowns-expanded > li > .has-caret .caret{ display: none; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; font-weight: 500; text-transform: none;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .footer-top-inner{ background-color: var(--nv-site-bg); } .footer-top-inner,.footer-top-inner a:not(.button),.footer-top-inner .navbar-toggle{ color: var(--nv-text-color); } .footer-top-inner .nv-icon svg,.footer-top-inner .nv-contact-list svg{ fill: var(--nv-text-color); } .footer-top-inner .icon-bar{ background-color: var(--nv-text-color); } .footer-top-inner .nav-ul .sub-menu{ background-color: var(--nv-site-bg); } .footer-bottom-inner{ background-color: var(--nv-c-2); } .footer-bottom-inner,.footer-bottom-inner a:not(.button),.footer-bottom-inner .navbar-toggle{ color: var(--nv-text-color); } .footer-bottom-inner .nv-icon svg,.footer-bottom-inner .nv-contact-list svg{ fill: var(--nv-text-color); } .footer-bottom-inner .icon-bar{ background-color: var(--nv-text-color); } .footer-bottom-inner .nav-ul .sub-menu{ background-color: var(--nv-c-2); } .nav-menu-footer #footer-menu > li > a{ color: var(--nv-text-color); } #footer-menu > li > a:after{ background-color: var(--nv-primary-accent); } .nav-menu-footer:not(.style-full-height) #footer-menu > li:hover > a{ color: var(--nv-primary-accent); } .builder-item--footer-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--footer-menu .style-full-height .nav-ul#footer-menu > li:hover > a:after{ width: calc(100% + 20px); } .builder-item--footer-menu .nav-ul a{ min-height: 25px; } .builder-item--footer-menu li > a{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; font-weight: 500; text-transform: none; } .builder-item--footer-menu li > a svg{ width: 1em;height: 1em; } .builder-item--footer-menu{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--footer_copyright{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; font-weight: 500; text-transform: none;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--footer_copyright svg{ width: 1em;height: 1em; } @media(min-width: 576px){ .container{ max-width: 992px; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:962px } body, .site-title{ font-size: 17px; line-height: 1.6em; letter-spacing: 0px; } h1, .single h1.entry-title{ font-size: 1.5em; line-height: 1.6em; letter-spacing: 0px; } h2{ font-size: 1.3em; line-height: 1.6em; letter-spacing: 0px; } h3, .woocommerce-checkout h3{ font-size: 1.1em; line-height: 1.6em; letter-spacing: 0px; } h4{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; } h5{ font-size: 0.75em; line-height: 1.6em; letter-spacing: 0px; } h6{ font-size: 0.75em; line-height: 1.6em; letter-spacing: 0px; } .builder-item--logo .site-logo img{ max-width: 120px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 20px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .builder-item--footer-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--footer-menu .style-full-height .nav-ul#footer-menu > li:hover > a:after{ width: calc(100% + 20px); } .builder-item--footer-menu .nav-ul a{ min-height: 25px; } .builder-item--footer-menu li > a{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; } .builder-item--footer-menu li > a svg{ width: 1em;height: 1em; } .builder-item--footer-menu{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--footer_copyright{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--footer_copyright svg{ width: 1em;height: 1em; } }@media(min-width: 960px){ .container{ max-width: 1170px; } body:not(.single):not(.archive):not(.blog):not(.search) .neve-main > .container .col, body.post-type-archive-course .neve-main > .container .col, body.post-type-archive-llms_membership .neve-main > .container .col{ max-width: 70%; } body:not(.single):not(.archive):not(.blog):not(.search) .nv-sidebar-wrap, body.post-type-archive-course .nv-sidebar-wrap, body.post-type-archive-llms_membership .nv-sidebar-wrap{ max-width: 30%; } .neve-main > .archive-container .nv-index-posts.col{ max-width: 70%; } .neve-main > .archive-container .nv-sidebar-wrap{ max-width: 30%; } .neve-main > .single-post-container .nv-single-post-wrap.col{ max-width: 70%; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:789px } .container-fluid.single-post-container .alignfull > [class*="__inner-container"], .container-fluid.single-post-container .alignwide > [class*="__inner-container"]{ max-width:calc(70% + 15px) } .neve-main > .single-post-container .nv-sidebar-wrap{ max-width: 30%; } body, .site-title{ font-size: 18px; line-height: 1.6em; letter-spacing: 0px; } h1, .single h1.entry-title{ font-size: 2em; line-height: 1.6em; letter-spacing: 0px; } h2{ font-size: 1.75em; line-height: 1.6em; letter-spacing: 0px; } h3, .woocommerce-checkout h3{ font-size: 1.5em; line-height: 1.6em; letter-spacing: 0px; } h4{ font-size: 1.25em; line-height: 1.6em; letter-spacing: 0px; } h5{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; } h6{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; } .builder-item--logo .site-logo img{ max-width: 120px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart) > a:after{ left:-10px;right:-10px } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 20px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .builder-item--footer-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--footer-menu .style-full-height .nav-ul#footer-menu > li > a:after{ left:-10px;right:-10px } .builder-item--footer-menu .style-full-height .nav-ul#footer-menu > li:hover > a:after{ width: calc(100% + 20px); } .builder-item--footer-menu .nav-ul a{ min-height: 25px; } .builder-item--footer-menu li > a{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; } .builder-item--footer-menu li > a svg{ width: 1em;height: 1em; } .builder-item--footer-menu{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--footer_copyright{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--footer_copyright svg{ width: 1em;height: 1em; } }:root{--nv-primary-accent:#0366d6;--nv-secondary-accent:#0e509a;--nv-site-bg:#ffffff;--nv-light-bg:#ededed;--nv-dark-bg:#14171c;--nv-text-color:#393939;--nv-text-dark-bg:#ffffff;--nv-c-1:#77b978;--nv-c-2:#f37262;--nv-fallback-ff:Arial, Helvetica, sans-serif;}</style>
+<script data-wpmeteor-after="REORDER" data-wpacu-to-be-preloaded-basic="1" type="javascript/blocked" data-src="https://goodhealthall.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<link rel="icon" href="https://goodhealthall.com/wp-content/uploads/2017/06/GHA-96x87.png" sizes="32x32">
+<link rel="icon" href="https://goodhealthall.com/wp-content/uploads/2017/06/GHA.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://goodhealthall.com/wp-content/uploads/2017/06/GHA.png">
+<meta name="msapplication-TileImage" content="https://goodhealthall.com/wp-content/uploads/2017/06/GHA.png">
+<style>.ai-viewports                 {--ai: 1;}
+.ai-viewport-3                { display: none !important;}
+.ai-viewport-2                { display: none !important;}
+.ai-viewport-1                { display: inherit !important;}
+.ai-viewport-0                { display: none !important;}
+@media (min-width: 768px) and (max-width: 979px) {
+.ai-viewport-1                { display: none !important;}
+.ai-viewport-2                { display: inherit !important;}
+}
+@media (max-width: 767px) {
+.ai-viewport-1                { display: none !important;}
+.ai-viewport-3                { display: inherit !important;}
+}</style>
+<script data-wpmeteor-after="REORDER" data-defer type="javascript/blocked" data-src="//bcdn.grmtas.com/pub/ga_pub_6059.js"></script>
+	<script>
+	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	 ga('create', 'UA-68312829-1', 'auto');
+	 ga('send', 'pageview');
+	 setTimeout("ga('send','event','Engaged User','More than 15 seconds')",15000); // -- Adjusted Bounce Rate
+	</script>
+	</head>
+
+<body class="post-template-default single single-post postid-7561 single-format-standard  nv-sidebar-right menu_sidebar_slide_left" id="neve_body">
+<div class="wrapper">
+	
+	<header class="header" role="banner" next-page-hide>
+		<a class="neve-skip-link show-on-focus" href="#content">
+			Skip to content		</a>
+		<div id="header-grid" class="hfg_header site-header">
+	
+<nav class="header--row header-main hide-on-mobile hide-on-tablet layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="desktop">
+
+	<div class="header--row-inner header-main-inner">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_main">
+				<div class="builder-item hfg-item-first col-3 desktop-left">
+<div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+	<div class="site-logo">
+	<a class="brand" href="https://goodhealthall.com/" title="Good Health All" aria-label="Good Health All"><div class="nv-title-tagline-wrap"><p class="site-title">Good Health All</p></div></a>
+</div>
+
+	</div>
+
+</div>
+<div class="builder-item has-nav hfg-item-last col-9 desktop-right">
+<div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+	<div class="nv-nav-wrap">
+	<div role="navigation" class="style-plain nav-menu-primary" aria-label="Primary Menu">
+
+		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul">
+<li id="menu-item-10518" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-10518"><a href="https://goodhealthall.com/healthy-fruits/">Healthy Fruits</a></li>
+<li id="menu-item-10519" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10519"><a href="https://goodhealthall.com/healthy-vegetables/">Healthy Vegetables</a></li>
+<li id="menu-item-10520" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10520"><a href="https://goodhealthall.com/healthy-nuts/">Healthy Nuts</a></li>
+<li id="menu-item-10521" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10521"><a href="https://goodhealthall.com/healthy-beverages/">Healthy Beverages</a></li>
+<li id="menu-item-10522" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10522"><a href="https://goodhealthall.com/healthy-spices/">Healthy Spices</a></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</nav>
+
+<div class="header--row header-top hide-on-desktop layout-full-contained header--row" data-row-id="top" data-show-on="mobile">
+
+	<div class="header--row-inner header-top-inner">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_top">
+				<div class="builder-item hfg-item-last hfg-item-first col-1 tablet-right mobile-right offset-11">
+<div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
+	<div class="menu-mobile-toggle item-button navbar-toggle-wrapper">
+	<button type="button" class="navbar-toggle" aria-label="
+			Navigation Menu			">
+				<span class="bars">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</span>
+		<span class="screen-reader-text">Navigation Menu</span>
+	</button>
+</div> 
+
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</div>
+
+
+<nav class="header--row header-main hide-on-desktop layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="mobile">
+
+	<div class="header--row-inner header-main-inner">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_main">
+				<div class="builder-item hfg-item-last hfg-item-first col-9 mobile-left tablet-left offset-3">
+<div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+	<div class="site-logo">
+	<a class="brand" href="https://goodhealthall.com/" title="Good Health All" aria-label="Good Health All"><div class="nv-title-tagline-wrap"><p class="site-title">Good Health All</p></div></a>
+</div>
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</nav>
+
+</div>
+	</header>
+
+	
+
+	
+	<main id="content" class="neve-main" role="main">
+
+	<div class="container single-post-container">
+		<div class="row">
+						<article id="post-7561" class="nv-single-post-wrap col post-7561 post type-post status-publish format-standard has-post-thumbnail hentry category-healthy-fruits tag-health-and-beauty">
+				<div class="code-block code-block-8" style="margin: 8px auto 8px 0; text-align: left; display: block; clear: both; height: 90px;">
+<centre>
+<div id="ga_11154987"> </div>
+<centre></centre></centre>
+</div>
+<div class="entry-header"><div class="nv-title-meta-wrap ">
+<small class="neve-breadcrumbs-wrapper"><nav aria-label="breadcrumbs" class="rank-math-breadcrumb"><a href="https://goodhealthall.com/">Home</a><span class="separator"> &raquo; </span><span class="last">7 Major Side Effects of Consuming Too Many Jujubes</span></nav></small><h1 class="title entry-title">7 Major Side Effects of Consuming Too Many Jujubes</h1>
+<ul class="nv-meta-list">
+<li class="meta author vcard"><span class="author-name fn">by <a href="https://goodhealthall.com/author/bharatsharma08/" title="Posts by Bharat Sharma" rel="author">Bharat Sharma</a></span></li>
+<li class="meta date posted-on nv-show-updated"><time class="updated" datetime="2021-07-09T12:17:19+05:30">July 9, 2021</time></li>
+</ul>
+</div></div>
+<div class="nv-content-wrap entry-content">
+<div class="ai-viewports ai-viewport-1 ai-insert-10-76346600" style="margin: 8px 0; clear: both;" data-insertion="prepend" data-selector=".ai-insert-10-76346600" data-insertion-no-dbg data-code="PGRpdiBjbGFzcz0nY29kZS1ibG9jayBjb2RlLWJsb2NrLTEwJyBzdHlsZT0nbWFyZ2luOiA4cHggMDsgY2xlYXI6IGJvdGg7Jz4KPGRpdiBjbGFzcz0iYTJhX2tpdCBhMmFfa2l0X3NpemVfMzIgYTJhX2Zsb2F0aW5nX3N0eWxlIGEyYV92ZXJ0aWNhbF9zdHlsZSIgc3R5bGU9ImxlZnQ6MHB4OyB0b3A6MTUwcHg7Ij4KICA8YSBjbGFzcz0iYTJhX2J1dHRvbl9mYWNlYm9vayIgcmVsPSJub2ZvbGxvdyI+PC9hPgogIDxhIGNsYXNzPSJhMmFfYnV0dG9uX3R3aXR0ZXIiIHJlbD0ibm9mb2xsb3ciPjwvYT4KICA8YSBjbGFzcz0iYTJhX2J1dHRvbl9waW50ZXJlc3QiIHJlbD0ibm9mb2xsb3ciPjwvYT4KICA8YSBjbGFzcz0iYTJhX2RkIiBocmVmPSJodHRwczovL3d3dy5hZGR0b2FueS5jb20vc2hhcmUgcmVsPSJub2ZvbGxvdyIiPjwvYT4KPC9kaXY+Cgo8c2NyaXB0IGFzeW5jIHNyYz0iaHR0cHM6Ly9zdGF0aWMuYWRkdG9hbnkuY29tL21lbnUvcGFnZS5qcyI+PC9zY3JpcHQ+PC9kaXY+Cg==" data-block="10"></div>
+
+<div class="code-block code-block-9 ai-viewport-2 ai-viewport-3" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" style="bottom:10%; left:20px;">
+    <a class="a2a_button_facebook" rel="nofollow"></a>
+    <a class="a2a_button_twitter" rel="nofollow"></a>
+    <a class="a2a_button_pinterest" rel="nofollow"></a>
+    <a class="a2a_dd" href="https://www.addtoany.com/share" rel="nofollow"></a>
+</div>
+
+<script data-wpmeteor-after="REORDER" type="javascript/blocked" data-async data-src="https://static.addtoany.com/menu/page.js" rel="nofollow"></script>
+</div>
+<p><span style="font-weight: 400;">Jujuba or jujube fruit is a species of the Ziziphus genus and belongs to the buckthorn family.  They are native to Southern Asia but are now grown in many regions of the world.  They are known by some other names such as Korean dates, Chinese dates, red dates, and Indian dates.  Jujube provides many health and beauty benefits due to the abundance of essential nutrients like vitamins, minerals, antioxidants, and dietary fibers. However, there are also some side effects of eating too many jujubes.</span></p>
+<h2><b>Side Effects of Eating Too Many Jujubes</b></h2>
+<p><span style="font-weight: 400;">Some major side effects of eating too many jujubes are as follows.</span></p>
+<h3><b>(1) Too Many Antioxidants Are Bad For Health</b></h3>
+<p><span style="font-weight: 400;">Vitamin C, vitamin A, and other antioxidant compounds like phytonutrients, etc in jujube protects our cells from free radical damage and reduces the risk of several cancers.</span></p>
+<p><span style="font-weight: 400;">Free radicals are unstabilized ions that stabilize by stealing electrons from neighboring molecules, and doing so causes oxidative damage to them.</span></p>
+<p><span style="font-weight: 400;">At moderate levels, antioxidants react with free radicals, but in large doses, they may react with healthy cells and cause oxidative damage to them. </span></p>
+<p><span style="font-weight: 400;">Eat jujube fruit in moderation as high antioxidants may increase the risk of several cancers.</span></p>
+<p><span style="font-weight: 400;">As per a 2011 study on 35,500 men, high levels of vitamin E may increase </span><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4169010/" target="_blank" rel="noopener"><span style="font-weight: 400;">prostate cancer</span></a><span style="font-weight: 400;"> risk by 17 percent.</span></p>
+<p><span style="font-weight: 400;">According to a study by National Cancer Institute, smokers that took high doses of beta-carotene supplements were more likely to </span><a href="https://pubmed.ncbi.nlm.nih.gov/20155614/" target="_blank" rel="noopener"><span style="font-weight: 400;">develop lung cancer</span></a><span style="font-weight: 400;"> in comparison to those who didn’t. </span></p>
+<p><span style="font-weight: 400;">As per a study by the office of dietary supplements, in large doses vitamin E may increase the risk of </span><a href="https://pubmed.ncbi.nlm.nih.gov/21051774/" target="_blank" rel="noopener"><span style="font-weight: 400;">hemorrhagic stroke.</span></a></p>
+<p><span style="font-weight: 400;">If you take antioxidant supplements, eat jujube in moderation to avoid the risk of antioxidant overdose. </span></p>
+<div class="code-block code-block-5" style="margin: 8px auto; text-align: center; display: block; clear: both; width: 300px; height: 250px;">
+<centre>
+<div id="ga_10031073"> </div>
+<centre></centre></centre>
+</div>
+
+<p><span style="font-weight: 400;"><div style="clear:both; margin-top:0em; margin-bottom:1em;"><a href="https://goodhealthall.com/side-effects-of-eating-too-many-quenepas/" target="_blank" rel="dofollow" class="ucbe5abfc4634ae2208b72475fa4f2228"><style>.ucbe5abfc4634ae2208b72475fa4f2228 , .ucbe5abfc4634ae2208b72475fa4f2228 .postImageUrl , .ucbe5abfc4634ae2208b72475fa4f2228 .centered-text-area { min-height: 80px; position: relative; } .ucbe5abfc4634ae2208b72475fa4f2228 , .ucbe5abfc4634ae2208b72475fa4f2228:hover , .ucbe5abfc4634ae2208b72475fa4f2228:visited , .ucbe5abfc4634ae2208b72475fa4f2228:active { border:0!important; } .ucbe5abfc4634ae2208b72475fa4f2228 .clearfix:after { content: ""; display: table; clear: both; } .ucbe5abfc4634ae2208b72475fa4f2228 { display: block; transition: background-color 250ms; webkit-transition: background-color 250ms; width: 100%; opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; background-color: #2C3E50; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); } .ucbe5abfc4634ae2208b72475fa4f2228:active , .ucbe5abfc4634ae2208b72475fa4f2228:hover { opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; background-color: #D35400; } .ucbe5abfc4634ae2208b72475fa4f2228 .centered-text-area { width: 100%; position: relative; } .ucbe5abfc4634ae2208b72475fa4f2228 .ctaText { border-bottom: 0 solid #fff; color: #ECF0F1; font-size: 16px; font-weight: bold; margin: 0; padding: 0; text-decoration: underline; } .ucbe5abfc4634ae2208b72475fa4f2228 .postTitle { color: #eaeaea; font-size: 16px; font-weight: 600; margin: 0; padding: 0; width: 100%; } .ucbe5abfc4634ae2208b72475fa4f2228 .ctaButton { background-color: #34495E!important; color: #ECF0F1; border: none; border-radius: 3px; box-shadow: none; font-size: 14px; font-weight: bold; line-height: 26px; moz-border-radius: 3px; text-align: center; text-decoration: none; text-shadow: none; width: 80px; min-height: 80px; background: url(https://goodhealthall.com/wp-content/plugins/intelly-related-posts/assets/images/simple-arrow.png)no-repeat; position: absolute; right: 0; top: 0; } .ucbe5abfc4634ae2208b72475fa4f2228:hover .ctaButton { background-color: #E67E22!important; } .ucbe5abfc4634ae2208b72475fa4f2228 .centered-text { display: table; height: 80px; padding-left: 18px; top: 0; } .ucbe5abfc4634ae2208b72475fa4f2228 .ucbe5abfc4634ae2208b72475fa4f2228-content { display: table-cell; margin: 0; padding: 0; padding-right: 108px; position: relative; vertical-align: middle; width: 100%; } .ucbe5abfc4634ae2208b72475fa4f2228:after { content: ""; display: block; clear: both; }</style>
+<div class="centered-text-area"><div class="centered-text" style="float: left;"><div class="ucbe5abfc4634ae2208b72475fa4f2228-content">
+<span class="ctaText">Suggested Read </span>&nbsp; <span class="postTitle">5 Major Side Effects of Eating Too Many Quenepas</span>
+</div></div></div>
+<div class="ctaButton"></div></a></div></span></p>
+<h3><b>(2) Too Much Dietary Fiber Is Bad For Digestive Health</b></h3>
+<p><span style="font-weight: 400;">Dietary fibers in jujube are a natural laxative that improves bowel movement, relieves constipation, and other gastrointestinal problems like abdominal pain, gas, bloating, and, flatulence, etc. </span></p>
+<p><span style="font-weight: 400;">However, too many dietary fibers may </span><a href="https://studentaffairs.duke.edu/sites/default/files/u110/TooMuchFiber082015.pdf" target="_blank" rel="noopener"><span style="font-weight: 400;">over-stimulate bowel movement</span></a><span style="font-weight: 400;"> and give rise to abdominal cramping, malabsorption, diarrhea, constipation, indigestion, intestinal gas, and intestinal blockage, etc.</span></p>
+<p><span style="font-weight: 400;">If you are already eating a fiber-rich diet, adding more fiber ( through jujube) may increase the risk of digestive problems.</span></p>
+<p><span style="font-weight: 400;">Eat jujube in moderation to avoid the risk.</span></p>
+<div id="attachment_7520" style="width: 421px" class="wp-caption alignleft">
+<img aria-describedby="caption-attachment-7520" loading="lazy" class=" wp-image-7520" src="https://goodhealthall.com/wp-content/uploads/2018/09/Side-Effects-of-Eating-Too-Many-Jujubes-326x206.jpg" alt="Side Effects of Eating Too Many Jujubes" width="411" height="260"><p id="caption-attachment-7520" class="wp-caption-text">Source-Pixabay.com</p>
+</div>
+<h3><b>(3) May Cause Allergies</b></h3>
+<p><span style="font-weight: 400;">Avoid jujubes if you are allergic to them.</span></p>
+<p><span style="font-weight: 400;">Itchy skin, skin rashes, swollen lips and tongue, and throat irritation, etc are some common </span><a href="https://pubmed.ncbi.nlm.nih.gov/14976388/" target="_blank" rel="noopener"><span style="font-weight: 400;">allergies caused by jujube fruit.</span></a></p>
+<p><span style="font-weight: 400;"><div style="clear:both; margin-top:0em; margin-bottom:1em;"><a href="https://goodhealthall.com/amla-benefits/" target="_blank" rel="dofollow" class="ua0a651526c92a34226b6a96291fc499d"><style>.ua0a651526c92a34226b6a96291fc499d , .ua0a651526c92a34226b6a96291fc499d .postImageUrl , .ua0a651526c92a34226b6a96291fc499d .centered-text-area { min-height: 80px; position: relative; } .ua0a651526c92a34226b6a96291fc499d , .ua0a651526c92a34226b6a96291fc499d:hover , .ua0a651526c92a34226b6a96291fc499d:visited , .ua0a651526c92a34226b6a96291fc499d:active { border:0!important; } .ua0a651526c92a34226b6a96291fc499d .clearfix:after { content: ""; display: table; clear: both; } .ua0a651526c92a34226b6a96291fc499d { display: block; transition: background-color 250ms; webkit-transition: background-color 250ms; width: 100%; opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; background-color: #2C3E50; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); } .ua0a651526c92a34226b6a96291fc499d:active , .ua0a651526c92a34226b6a96291fc499d:hover { opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; background-color: #D35400; } .ua0a651526c92a34226b6a96291fc499d .centered-text-area { width: 100%; position: relative; } .ua0a651526c92a34226b6a96291fc499d .ctaText { border-bottom: 0 solid #fff; color: #ECF0F1; font-size: 16px; font-weight: bold; margin: 0; padding: 0; text-decoration: underline; } .ua0a651526c92a34226b6a96291fc499d .postTitle { color: #eaeaea; font-size: 16px; font-weight: 600; margin: 0; padding: 0; width: 100%; } .ua0a651526c92a34226b6a96291fc499d .ctaButton { background-color: #34495E!important; color: #ECF0F1; border: none; border-radius: 3px; box-shadow: none; font-size: 14px; font-weight: bold; line-height: 26px; moz-border-radius: 3px; text-align: center; text-decoration: none; text-shadow: none; width: 80px; min-height: 80px; background: url(https://goodhealthall.com/wp-content/plugins/intelly-related-posts/assets/images/simple-arrow.png)no-repeat; position: absolute; right: 0; top: 0; } .ua0a651526c92a34226b6a96291fc499d:hover .ctaButton { background-color: #E67E22!important; } .ua0a651526c92a34226b6a96291fc499d .centered-text { display: table; height: 80px; padding-left: 18px; top: 0; } .ua0a651526c92a34226b6a96291fc499d .ua0a651526c92a34226b6a96291fc499d-content { display: table-cell; margin: 0; padding: 0; padding-right: 108px; position: relative; vertical-align: middle; width: 100%; } .ua0a651526c92a34226b6a96291fc499d:after { content: ""; display: block; clear: both; }</style>
+<div class="centered-text-area"><div class="centered-text" style="float: left;"><div class="ua0a651526c92a34226b6a96291fc499d-content">
+<span class="ctaText">Suggested Read </span>&nbsp; <span class="postTitle">36 Amazing Health & Beauty Benefits of Amla (Indian Gooseberry)</span>
+</div></div></div>
+<div class="ctaButton"></div></a></div></span></p>
+<div class="code-block code-block-6" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+<centre>
+<div id="ga_10031074"> </div>
+<centre>
+
+</centre></centre>
+</div>
+
+<h3><b>(4) Eating Jujube During Pregnancy And Nursing Stage</b></h3>
+<p><span style="font-weight: 400;">Jujube helps in maintaining healthy pregnancy because of its rich nutritious profile.</span></p>
+<p><span style="font-weight: 400;">Vitamin C and other antioxidant compounds in jujube protect the fetus from free radical damage.</span></p>
+<p><span style="font-weight: 400;">Folate in jujube promotes brain development in fetuses and reduces the risk of neural tube defects like spina bifida. </span></p>
+<p><span style="font-weight: 400;">Jujube regulates our blood sugar level and reduces the risk of gestational diabetes that some pregnant women experience between the 24th-28th week of pregnancy.</span></p>
+<p><span style="font-weight: 400;">However, eat jujubes during pregnancy and the nursing period only after consulting with your doctor to ensure there is no food-drug intolerance or complications ( in pregnancy) involved. </span></p>
+<p><span style="font-weight: 400;">In excessive quantity, dietary fibers in jujube may cause abdominal pain, stomach discomfort, diarrhea, intestinal gas, and intestinal blockage, etc. </span></p>
+<h3><b>(5) May Cause Low Blood Sugar</b></h3>
+<p><span style="font-weight: 400;">With a low glycemic index of 20, jujube slows down the rate at which sugar is released into the bloodstream, and prevents a sudden spike in blood sugar levels. </span></p>
+<p><span style="font-weight: 400;">This helps in managing diabetes. </span></p>
+<div class="code-block code-block-4" style="margin: 8px auto; text-align: center; display: block; clear: both; width: 300px; height: 250px;">
+<centre>
+<div id="ga_16213513"> </div>
+<centre>
+</centre></centre>
+</div>
+
+<p><span style="font-weight: 400;">Dietary fibers in jujube reduce sugar absorption by the bloodstream and keep blood sugar levels under control.</span></p>
+<p><span style="font-weight: 400;">Despite this benefit, eat jujubes in moderation as overconsumption may drop your blood sugar below the healthy level and cause dizziness, fainting, nausea, dehydration, lack of concentration, blurred vision, and pale skin, etc. </span></p>
+<p><span style="font-weight: 400;">If you take diabetic medication, add jujubes to your routine only after having a word with your doctor to avoid food-drug interference risk. </span></p>
+<p><span style="font-weight: 400;"><div style="clear:both; margin-top:0em; margin-bottom:1em;"><a href="https://goodhealthall.com/avocadoes-health-beauty-benefits/" target="_blank" rel="dofollow" class="uf907c6c12ca52aeea0a85b369d71cd8a"><style>.uf907c6c12ca52aeea0a85b369d71cd8a , .uf907c6c12ca52aeea0a85b369d71cd8a .postImageUrl , .uf907c6c12ca52aeea0a85b369d71cd8a .centered-text-area { min-height: 80px; position: relative; } .uf907c6c12ca52aeea0a85b369d71cd8a , .uf907c6c12ca52aeea0a85b369d71cd8a:hover , .uf907c6c12ca52aeea0a85b369d71cd8a:visited , .uf907c6c12ca52aeea0a85b369d71cd8a:active { border:0!important; } .uf907c6c12ca52aeea0a85b369d71cd8a .clearfix:after { content: ""; display: table; clear: both; } .uf907c6c12ca52aeea0a85b369d71cd8a { display: block; transition: background-color 250ms; webkit-transition: background-color 250ms; width: 100%; opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; background-color: #2C3E50; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); } .uf907c6c12ca52aeea0a85b369d71cd8a:active , .uf907c6c12ca52aeea0a85b369d71cd8a:hover { opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; background-color: #D35400; } .uf907c6c12ca52aeea0a85b369d71cd8a .centered-text-area { width: 100%; position: relative; } .uf907c6c12ca52aeea0a85b369d71cd8a .ctaText { border-bottom: 0 solid #fff; color: #ECF0F1; font-size: 16px; font-weight: bold; margin: 0; padding: 0; text-decoration: underline; } .uf907c6c12ca52aeea0a85b369d71cd8a .postTitle { color: #eaeaea; font-size: 16px; font-weight: 600; margin: 0; padding: 0; width: 100%; } .uf907c6c12ca52aeea0a85b369d71cd8a .ctaButton { background-color: #34495E!important; color: #ECF0F1; border: none; border-radius: 3px; box-shadow: none; font-size: 14px; font-weight: bold; line-height: 26px; moz-border-radius: 3px; text-align: center; text-decoration: none; text-shadow: none; width: 80px; min-height: 80px; background: url(https://goodhealthall.com/wp-content/plugins/intelly-related-posts/assets/images/simple-arrow.png)no-repeat; position: absolute; right: 0; top: 0; } .uf907c6c12ca52aeea0a85b369d71cd8a:hover .ctaButton { background-color: #E67E22!important; } .uf907c6c12ca52aeea0a85b369d71cd8a .centered-text { display: table; height: 80px; padding-left: 18px; top: 0; } .uf907c6c12ca52aeea0a85b369d71cd8a .uf907c6c12ca52aeea0a85b369d71cd8a-content { display: table-cell; margin: 0; padding: 0; padding-right: 108px; position: relative; vertical-align: middle; width: 100%; } .uf907c6c12ca52aeea0a85b369d71cd8a:after { content: ""; display: block; clear: both; }</style>
+<div class="centered-text-area"><div class="centered-text" style="float: left;"><div class="uf907c6c12ca52aeea0a85b369d71cd8a-content">
+<span class="ctaText">Suggested Read </span>&nbsp; <span class="postTitle">35 Major Health & Beauty Benefits Of Avocados</span>
+</div></div></div>
+<div class="ctaButton"></div></a></div></span></p>
+<h3><b>(6) May Drop Blood Pressure</b></h3>
+<p><span style="font-weight: 400;">Hypertension or high blood pressure is a condition that affects millions around the world and is the leading cause of several cardiovascular and other health problems.</span></p>
+<p><span style="font-weight: 400;">Potassium in jujube is a natural vasodilator that relaxes blood vessels, improves blood circulation, and provides </span><a href="https://pubmed.ncbi.nlm.nih.gov/21403995/" target="_blank" rel="noopener"><span style="font-weight: 400;">relief from hypertension.</span></a></p>
+<p><span style="font-weight: 400;">However, excessive intake of jujube may drop our blood pressure below the normal levels, and cause fatigue, dizziness, nausea, clammy skin, depression, and blurred vision, etc.</span></p>
+<p><span style="font-weight: 400;">If you are already taking blood pressure medication, consult your doctor before adding jujube to your routine to ensure there is no food-drug intolerance risk. </span></p>
+<h3><b>(7) May Interfere Weight Loss</b></h3>
+<p><span style="font-weight: 400;">Eating 100 grams of jujube provides 79 calories of energy. </span></p>
+<div class="code-block code-block-7" style="margin: 8px auto; text-align: center; display: block; clear: both; width: 300px; height: 250px;">
+<centre>
+<div id="ga_10031077"> </div>
+<centre>
+</centre></centre>
+</div>
+
+<p><span style="font-weight: 400;">When consumed in moderation, jujube boosts our energy level without much calorie overload.</span></p>
+<p><span style="font-weight: 400;">Dietary fibers in jujube provide stomach satiety and control overeating, a major cause of obesity.</span></p>
+<p><span style="font-weight: 400;">Although jujubes are great for weight loss, eat them in moderation as otherwise, they may increase your overall calorie intake.</span></p>
+<p><span style="font-weight: 400;">If you are already enjoying a balanced diet and getting enough calories, excessive calories from jujube or any other fruit may interfere with weight loss.</span></p>
+<p><span style="font-weight: 400;">Even when you eat jujube for weight loss, they should be part of your overall calorie intake and not an addition to it. </span></p>
+<p><span style="font-weight: 400;">Overeating jujubes may interfere with food digestion, cause poor absorption of nutrients,  and affect our metabolism negatively. </span></p>
+<p><b>Disclaimer</b></p>
+<p><b><i>The information contained in the post is for general purpose only and shouldn’t be considered as medical advice or as an alternative to medical advice. Although I’ve tried my best to keep the information contained in this post as accurate and updated as possible, I make no guarantee of the accurateness of the same.</i></b></p>
+<p><b><i>P.S- Consider sharing this post, if you find it useful and exciting.</i></b></p>
+
+</div>
+<div class="nv-post-navigation">
+<div class="previous"><a href="https://goodhealthall.com/jujube-health-beauty-benefits/" rel="prev"><span class="nav-direction">previous</span><span>33 Amazing Health &#038; Beauty Benefits of Jujube Fruit</span></a></div>
+<div class="next"><a href="https://goodhealthall.com/prickly-pears-health-beauty-benefits/" rel="next"><span class="nav-direction">next</span><span>29 Amazing Health &#038; Beauty Benefits of Prickly Pears</span></a></div>
+</div>			</article>
+			<div class="nv-sidebar-wrap col-sm-12 nv-right blog-sidebar ">
+		<aside id="secondary" role="complementary">
+		
+		<div id="ai_widget-17" class="widget ai_widget">
+<div class="code-block code-block-1" style="margin: 8px auto; text-align: center; display: block; clear: both; width: 300px; height: 600px;">
+<div class="ai-attributes">
+<div class="code-block-label">Advertisement</div>
+</div>
+<centre>
+<div id="ga_9892713"> </div>
+<centre></centre></centre>
+</div>
+</div>
+<div id="custom_html-7" class="widget_text widget widget_custom_html">
+<p class="widget-title">Popular Posts</p>
+<div class="textwidget custom-html-widget">
+<p><a href="https://goodhealthall.com/side-effects-of-eating-too-many-blueberries/" data-type="post" data-id="198">8 Major Side Effects of Eating Too Many Blueberries</a></p>
+
+<p><a href="https://goodhealthall.com/side-effects-of-eating-too-many-pistachios-pista/" data-type="post" data-id="265">13 Major Side Effects of Eating Too Many Pistachios (Pista)</a></p>
+
+
+<p><a href="https://goodhealthall.com/side-effects-of-eating-too-many-dragon-fruits/" data-type="post" data-id="7426">7 Major Side Effects of Eating Too Many Dragon Fruits</a></p>
+
+
+<p><a href="https://goodhealthall.com/side-effects-of-eating-too-many-cashew-nuts-kaju/" data-type="post" data-id="199">8 Major Side Effects of Eating Too Many Cashew Nuts</a></p>
+
+
+<p><a href="https://goodhealthall.com/side-effects-of-eating-too-many-peanuts-moongphali/" data-type="post" data-id="217">8 Major Side Effects of Eating Too Many Peanuts </a></p>
+</div>
+</div>
+<div id="ai_widget-18" class="widget ai_widget ai-sticky-widget">
+<div class="code-block code-block-2" style="margin: 8px auto; text-align: center; display: block; clear: both; width: 300px; height: 600px;">
+<div class="ai-attributes">
+<div class="code-block-label">Advertisement</div>
+</div>
+<centre>
+<div id="ga_9892715"> </div>
+<centre>
+</centre></centre>
+</div>
+</div>
+		<div id="recent-posts-6" class="widget widget_recent_entries">
+		<p class="widget-title">Recent Posts</p>
+		<ul>
+											<li>
+					<a href="https://goodhealthall.com/celery-benefits-side-effects/">18 Amazing Celery Benefits And Side Effects</a>
+									</li>
+											<li>
+					<a href="https://goodhealthall.com/why-is-delta-8-gaining-so-much-popularity-among-health-freaks/">Why is delta 8 Gaining So Much Popularity Among Health Freaks?</a>
+									</li>
+											<li>
+					<a href="https://goodhealthall.com/can-i-get-same-day-single-vision-prescription-lenses-online/">Can I get Same Day Single Vision Prescription Lenses Online?</a>
+									</li>
+											<li>
+					<a href="https://goodhealthall.com/post-pandemic-world-5-tips-on-business-reopening/">Post-Pandemic World: 5 Tips On Business Reopening</a>
+									</li>
+											<li>
+					<a href="https://goodhealthall.com/natural-fertility-enhancing-solutions-when-trying-to-conceive/">5 Natural Fertility-Enhancing Solutions When Trying to Conceive</a>
+									</li>
+					</ul>
+
+		</div>
+<div id="ai_widget-19" class="widget ai_widget">
+<div class="code-block code-block-3" style="margin: 8px auto; text-align: center; display: block; clear: both; width: 300px; height: 600px;">
+<div class="ai-attributes">
+<div class="code-block-label">Advertisement</div>
+</div>
+<centre>
+<div id="ga_9892719"> </div>
+<centre>
+</centre></centre>
+</div>
+</div>
+<div id="nav_menu-2" class="widget widget_nav_menu">
+<p class="widget-title">Categories</p>
+<div class="menu-categories-container"><ul id="menu-categories" class="menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-10518"><a href="https://goodhealthall.com/healthy-fruits/">Healthy Fruits</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10519"><a href="https://goodhealthall.com/healthy-vegetables/">Healthy Vegetables</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10520"><a href="https://goodhealthall.com/healthy-nuts/">Healthy Nuts</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10521"><a href="https://goodhealthall.com/healthy-beverages/">Healthy Beverages</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10522"><a href="https://goodhealthall.com/healthy-spices/">Healthy Spices</a></li>
+</ul></div>
+</div>
+<div id="custom_html-4" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><p><a href="https://goodhealthall.com/privacy-policy/" data-type="page" data-id="672">Privacy Policy</a></p></div></div>
+			</aside>
+</div>
+		</div>
+	</div>
+
+</main>
+
+<footer class="site-footer" id="site-footer" next-page-hide>
+	<div class="hfg_footer">
+		<div class="footer--row footer-top layout-full-contained" id="cb-row--footer-top" data-row-id="top" data-show-on="desktop">
+	<div class="footer--row-inner footer-top-inner footer-content-wrap">
+		<div class="container">
+			<div class="hfg-grid nv-footer-content hfg-grid-top row--wrapper row " data-section="hfg_footer_layout_top">
+				<div class="builder-item hfg-item-last hfg-item-first col-10 desktop-left tablet-left mobile-left offset-2">
+<div class="item--inner builder-item--footer-menu has_menu" data-section="footer_menu_primary" data-item-id="footer-menu">
+	<div class="component-wrap">
+	<div role="navigation" class="style-plain nav-menu-footer" aria-label="Footer Menu">
+
+		<ul id="footer-menu" class="footer-menu nav-ul">
+<li id="menu-item-676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-676"><a href="https://goodhealthall.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-679"><a href="https://goodhealthall.com/health-disclaimer/">Health Disclaimer</a></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer--row footer-bottom layout-full-contained" id="cb-row--footer-bottom" data-row-id="bottom" data-show-on="desktop">
+	<div class="footer--row-inner footer-bottom-inner footer-content-wrap">
+		<div class="container">
+			<div class="hfg-grid nv-footer-content hfg-grid-bottom row--wrapper row " data-section="hfg_footer_layout_bottom">
+				<div class="builder-item hfg-item-last hfg-item-first col-12 desktop-center tablet-center mobile-center">
+<div class="item--inner builder-item--footer_copyright" data-section="footer_copyright" data-item-id="footer_copyright">
+	<div class="component-wrap">
+	</div>
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+</footer>
+
+</div>
+<script data-wpmeteor-after="REORDER" type="javascript/blocked">
+function b2a(a){var b,c=0,l=0,f="",g=[];if(!a)return a;do{var e=a.charCodeAt(c++);var h=a.charCodeAt(c++);var k=a.charCodeAt(c++);var d=e<<16|h<<8|k;e=63&d>>18;h=63&d>>12;k=63&d>>6;d&=63;g[l++]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(e)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(h)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(k)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(d)}while(c<
+a.length);return f=g.join(""),b=a.length%3,(b?f.slice(0,b-3):f)+"===".slice(b||3)}function a2b(a){var b,c,l,f={},g=0,e=0,h="",k=String.fromCharCode,d=a.length;for(b=0;64>b;b++)f["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".charAt(b)]=b;for(c=0;d>c;c++)for(b=f[a.charAt(c)],g=(g<<6)+b,e+=6;8<=e;)((l=255&g>>>(e-=8))||d-2>c)&&(h+=k(l));return h}b64e=function(a){return btoa(encodeURIComponent(a).replace(/%([0-9A-F]{2})/g,function(b,a){return String.fromCharCode("0x"+a)}))};
+b64d=function(a){return decodeURIComponent(atob(a).split("").map(function(a){return"%"+("00"+a.charCodeAt(0).toString(16)).slice(-2)}).join(""))};
+/* <![CDATA[ */
+ai_front = {"insertion_before":"BEFORE","insertion_after":"AFTER","insertion_prepend":"PREPEND CONTENT","insertion_append":"APPEND CONTENT","insertion_replace_content":"REPLACE CONTENT","insertion_replace_element":"REPLACE ELEMENT","visible":"VISIBLE","hidden":"HIDDEN","fallback":"FALLBACK","automatically_placed":"Automatically placed by AdSense Auto ads code","cancel":"Cancel","use":"Use","add":"Add","parent":"Parent","cancel_element_selection":"Cancel element selection","select_parent_element":"Select parent element","css_selector":"CSS selector","use_current_selector":"Use current selector","element":"ELEMENT","path":"PATH","selector":"SELECTOR"};
+/* ]]> */
+jQuery(document).ready(function(g){var n=function(c){var h=0,k=15,l=c(document).width();c(".ai-sticky-widget").each(function(){for(var b=c(this),m=b.width(),d=!1,a=b.parent();"BODY"!=a.prop("tagName");){if(a.hasClass("theiaStickySidebar")){d=!0;break}var e=a.parent(),f=e.width();if(f>1.2*m||f>l/2)break;a=e}d||(b=a.offset().top-b.offset().top+k,0==h?("sticky"!=a.css("position")||isNaN(parseInt(a.css("top")))||a.css("top")<b)&&a.css("position",
+"sticky").css("position","-webkit-sticky").css("top",b):a.theiaStickySidebar({additionalMarginTop:b,sidebarBehavior:"stick-to-top"}))})};"undefined"==typeof ai_sticky_sidebar_delay&&(ai_sticky_sidebar_delay=200);setTimeout(function(){n(g)},ai_sticky_sidebar_delay)});
+(function(a){if("function"===typeof define&&define.amd){define(a);var c=!0}"object"===typeof exports&&(module.exports=a(),c=!0);if(!c){var e=window.Cookies,b=window.Cookies=a();b.noConflict=function(){window.Cookies=e;return b}}})(function(){function a(){for(var e=0,b={};e<arguments.length;e++){var f=arguments[e],d;for(d in f)b[d]=f[d]}return b}function c(e){function b(){}function f(h,k,g){if("undefined"!==typeof document){g=a({path:"/",sameSite:"Lax"},b.defaults,g);"number"===typeof g.expires&&(g.expires=
+new Date(1*new Date+864E5*g.expires));g.expires=g.expires?g.expires.toUTCString():"";try{var l=JSON.stringify(k);/^[\{\[]/.test(l)&&(k=l)}catch(p){}k=e.write?e.write(k,h):encodeURIComponent(String(k)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent);h=encodeURIComponent(String(h)).replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent).replace(/[\(\)]/g,escape);l="";for(var n in g)g[n]&&(l+="; "+n,!0!==g[n]&&(l+="="+g[n].split(";")[0]));return document.cookie=
+h+"="+k+l}}function d(h,k){if("undefined"!==typeof document){for(var g={},l=document.cookie?document.cookie.split("; "):[],n=0;n<l.length;n++){var p=l[n].split("="),m=p.slice(1).join("=");k||'"'!==m.charAt(0)||(m=m.slice(1,-1));try{var q=p[0].replace(/(%[0-9A-Z]{2})+/g,decodeURIComponent);m=(e.read||e)(m,q)||m.replace(/(%[0-9A-Z]{2})+/g,decodeURIComponent);if(k)try{m=JSON.parse(m)}catch(r){}g[q]=m;if(h===q)break}catch(r){}}return h?g[h]:g}}b.set=f;b.get=function(h){return d(h,!1)};b.getJSON=function(h){return d(h,
+!0)};b.remove=function(h,k){f(h,"",a(k,{expires:-1}))};b.defaults={};b.withConverter=c;return b}return c(function(){})});AiCookies=Cookies.noConflict();
+ai_check_block=function(a){if(null==a)return!0;var c=AiCookies.getJSON("aiBLOCKS");ai_debug_cookie_status="";null==c&&(c={});"undefined"!==typeof ai_delay_showing_pageviews&&(c.hasOwnProperty(a)||(c[a]={}),c[a].hasOwnProperty("d")||(c[a].d=ai_delay_showing_pageviews));if(c.hasOwnProperty(a)){for(var e in c[a]){if("x"==e){var b="",f=document.querySelectorAll('span[data-ai-block="'+a+'"]')[0];"aiHash"in f.dataset&&(b=f.dataset.aiHash);f="";c[a].hasOwnProperty("h")&&(f=c[a].h);var d=new Date;d=c[a][e]-
+Math.round(d.getTime()/1E3);if(0<d&&f==b)return ai_debug_cookie_status=a="closed for "+d+" s = "+Math.round(1E4*d/3600/24)/1E4+" days",!1;ai_set_cookie(a,"x","");c[a].hasOwnProperty("i")||c[a].hasOwnProperty("c")||ai_set_cookie(a,"h","")}else if("d"==e){if(0!=c[a][e])return ai_debug_cookie_status=a="delayed for "+c[a][e]+" pageviews",!1}else if("i"==e){b="";f=document.querySelectorAll('span[data-ai-block="'+a+'"]')[0];"aiHash"in f.dataset&&(b=f.dataset.aiHash);f="";c[a].hasOwnProperty("h")&&(f=c[a].h);
+if(0==c[a][e]&&f==b)return ai_debug_cookie_status=a="max impressions reached",!1;if(0>c[a][e]&&f==b){d=new Date;d=-c[a][e]-Math.round(d.getTime()/1E3);if(0<d)return ai_debug_cookie_status=a="max imp. reached ("+Math.round(1E4*d/24/3600)/1E4+" days = "+d+" s)",!1;ai_set_cookie(a,"i","");c[a].hasOwnProperty("c")||c[a].hasOwnProperty("x")||ai_set_cookie(a,"h","")}}if("ipt"==e&&0==c[a][e]&&(d=new Date,b=Math.round(d.getTime()/1E3),d=c[a].it-b,0<d))return ai_debug_cookie_status=a="max imp. per time reached ("+
+Math.round(1E4*d/24/3600)/1E4+" days = "+d+" s)",!1;if("c"==e){b="";f=document.querySelectorAll('span[data-ai-block="'+a+'"]')[0];"aiHash"in f.dataset&&(b=f.dataset.aiHash);f="";c[a].hasOwnProperty("h")&&(f=c[a].h);if(0==c[a][e]&&f==b)return ai_debug_cookie_status=a="max clicks reached",!1;if(0>c[a][e]&&f==b){d=new Date;d=-c[a][e]-Math.round(d.getTime()/1E3);if(0<d)return ai_debug_cookie_status=a="max clicks reached ("+Math.round(1E4*d/24/3600)/1E4+" days = "+d+" s)",!1;ai_set_cookie(a,"c","");c[a].hasOwnProperty("i")||
+c[a].hasOwnProperty("x")||ai_set_cookie(a,"h","")}}if("cpt"==e&&0==c[a][e]&&(d=new Date,b=Math.round(d.getTime()/1E3),d=c[a].ct-b,0<d))return ai_debug_cookie_status=a="max clicks per time reached ("+Math.round(1E4*d/24/3600)/1E4+" days = "+d+" s)",!1}if(c.hasOwnProperty("G")&&c.G.hasOwnProperty("cpt")&&0==c.G.cpt&&(d=new Date,b=Math.round(d.getTime()/1E3),d=c.G.ct-b,0<d))return ai_debug_cookie_status=a="max global clicks per time reached ("+Math.round(1E4*d/24/3600)/1E4+" days = "+d+" s)",!1}ai_debug_cookie_status=
+"OK";return!0};
+ai_check_and_insert_block=function(a,c){if(null==a)return!0;var e=document.getElementsByClassName(c);if(e.length){e=e[0];var b=e.closest(".code-block");if(ai_check_block(a)){if(ai_insert_code(e),b){var f=b.querySelectorAll(".ai-debug-block");b&&f.length&&(b.classList.remove("ai-list-block"),b.classList.remove("ai-list-block-ip"),b.classList.remove("ai-list-block-filter"),b.style.visibility="",b.classList.contains("ai-remove-position")&&(b.style.position=""))}}else{f=e.closest("div[data-ai]");
+if(null!=f&&"undefined"!=typeof f.getAttribute("data-ai")){var d=JSON.parse(b64d(f.getAttribute("data-ai")));"undefined"!==typeof d&&d.constructor===Array&&(d[1]="",f.setAttribute("data-ai",b64e(JSON.stringify(d))))}f=b.querySelectorAll(".ai-debug-block");b&&f.length&&(b.classList.remove("ai-list-block"),b.classList.remove("ai-list-block-ip"),b.classList.remove("ai-list-block-filter"),b.style.visibility="",b.classList.contains("ai-remove-position")&&(b.style.position=""))}e.classList.remove(c)}e=
+document.querySelectorAll("."+c+"-dbg");b=0;for(f=e.length;b<f;b++)d=e[b],d.querySelector(".ai-status").textContent=ai_debug_cookie_status,d.querySelector(".ai-cookie-data").textContent=ai_get_cookie_text(a),d.classList.remove(c+"-dbg")};function ai_load_cookie(){var a=AiCookies.getJSON("aiBLOCKS");null==a&&(a={});return a}function ai_get_cookie(a,c){var e="",b=ai_load_cookie();b.hasOwnProperty(a)&&b[a].hasOwnProperty(c)&&(e=b[a][c]);return e}
+function ai_set_cookie(a,c,e){var b=ai_load_cookie();if(""===e){if(b.hasOwnProperty(a)){delete b[a][c];a:{c=b[a];for(f in c)if(c.hasOwnProperty(f)){var f=!1;break a}f=!0}f&&delete b[a]}}else b.hasOwnProperty(a)||(b[a]={}),b[a][c]=e;0===Object.keys(b).length&&b.constructor===Object?AiCookies.remove("aiBLOCKS"):AiCookies.set("aiBLOCKS",b,{expires:365,path:"/"});return b}
+ai_get_cookie_text=function(a){var c=AiCookies.getJSON("aiBLOCKS");null==c&&(c={});var e="";c.hasOwnProperty("G")&&(e="G["+JSON.stringify(c.G).replace(/"/g,"").replace("{","").replace("}","")+"] ");var b="";c.hasOwnProperty(a)&&(b=JSON.stringify(c[a]).replace(/"/g,"").replace("{","").replace("}",""));return e+b};
+ai_insert=function(c,h,t){for(var n=-1!=h.indexOf(":eq")?jQuery(h):document.querySelectorAll(h),u=0,y=n.length;u<y;u++){var b=n[u];selector_string=b.hasAttribute("id")?"#"+b.getAttribute("id"):b.hasAttribute("class")?"."+b.getAttribute("class").replace(RegExp(" ","g"),"."):"";var v=document.createElement("div");v.innerHTML=t;var m=v.getElementsByClassName("ai-selector-counter")[0];null!=m&&(m.innerText=u+1);m=v.getElementsByClassName("ai-debug-name ai-main")[0];if(null!=m){var l="";"before"==c?l=
+ai_front.insertion_before:"after"==c?l=ai_front.insertion_after:"prepend"==c?l=ai_front.insertion_prepend:"append"==c?l=ai_front.insertion_append:"replace-content"==c?l=ai_front.insertion_replace_content:"replace-element"==c&&(l=ai_front.insertion_replace_element);-1==selector_string.indexOf(".ai-viewports")&&(m.innerText=l+" "+h+" ("+b.tagName.toLowerCase()+selector_string+")")}m=document.createRange();l=!0;try{var w=m.createContextualFragment(v.innerHTML)}catch(r){l=!1}"before"==c?l?b.parentNode.insertBefore(w,
+b):jQuery(v.innerHTML).insertBefore(jQuery(b)):"after"==c?l?b.parentNode.insertBefore(w,b.nextSibling):jQuery(v.innerHTML).insertBefore(jQuery(b.nextSibling)):"prepend"==c?l?b.insertBefore(w,b.firstChild):jQuery(v.innerHTML).insertBefore(jQuery(b.firstChild)):"append"==c?l?b.insertBefore(w,null):jQuery(v.innerHTML).appendTo(jQuery(b)):"replace-content"==c?(b.innerHTML="",l?b.insertBefore(w,null):jQuery(v.innerHTML).appendTo(jQuery(b))):"replace-element"==c&&(l?b.parentNode.insertBefore(w,b):jQuery(v.innerHTML).insertBefore(jQuery(b)),
+b.parentNode.removeChild(b))}};
+ai_insert_code=function(c){function h(m,l){return null==m?!1:m.classList?m.classList.contains(l):-1<(" "+m.className+" ").indexOf(" "+l+" ")}function t(m,l){null!=m&&(m.classList?m.classList.add(l):m.className+=" "+l)}function n(m,l){null!=m&&(m.classList?m.classList.remove(l):m.className=m.className.replace(new RegExp("(^|\\b)"+l.split(" ").join("|")+"(\\b|$)","gi")," "))}if("undefined"!=typeof c){var u=!1;if(h(c,"no-visibility-check")||c.offsetWidth||c.offsetHeight||c.getClientRects().length){u=
+c.getAttribute("data-code");var y=c.getAttribute("data-insertion"),b=c.getAttribute("data-selector");if(null!=u)if(null!=y&&null!=b){if(-1!=b.indexOf(":eq")?jQuery(b).length:document.querySelectorAll(b).length)ai_insert(y,b,b64d(u)),n(c,"ai-viewports")}else{y=document.createRange();b=!0;try{var v=y.createContextualFragment(b64d(u))}catch(m){b=!1}b?c.parentNode.insertBefore(v,c.nextSibling):jQuery(b64d(u)).insertBefore(jQuery(c.nextSibling));n(c,"ai-viewports")}u=!0}else v=c.previousElementSibling,
+h(v,"ai-debug-bar")&&h(v,"ai-debug-script")&&(n(v,"ai-debug-script"),t(v,"ai-debug-viewport-invisible")),n(c,"ai-viewports");return u}};
+ai_insert_list_code=function(c){var h=document.getElementsByClassName(c)[0];if("undefined"!=typeof h){var t=ai_insert_code(h),n=h.closest("div.code-block");if(n){t||n.removeAttribute("data-ai");var u=n.querySelectorAll(".ai-debug-block");n&&u.length&&(n.classList.remove("ai-list-block"),n.classList.remove("ai-list-block-ip"),n.classList.remove("ai-list-block-filter"),n.style.visibility="",n.classList.contains("ai-remove-position")&&(n.style.position=""))}h.classList.remove(c);t&&
+ai_process_elements()}};ai_insert_viewport_code=function(c){var h=document.getElementsByClassName(c)[0];if("undefined"!=typeof h){var t=ai_insert_code(h);h.classList.remove(c);t&&(c=h.closest("div.code-block"),null!=c&&(t=h.getAttribute("style"),null!=t&&c.setAttribute("style",c.getAttribute("style")+" "+t)));setTimeout(function(){h.removeAttribute("style")},2);ai_process_elements()}};
+ai_insert_code_by_class=function(c){var h=document.getElementsByClassName(c)[0];"undefined"!=typeof h&&(ai_insert_code(h),h.classList.remove(c))};ai_insert_client_code=function(c,h){var t=document.getElementsByClassName(c)[0];if("undefined"!=typeof t){var n=t.getAttribute("data-code");null!=n&&ai_check_block()&&ai_check_and_insert_block()&&(t.setAttribute("data-code",n.substring(Math.floor(h/19))),ai_insert_code_by_class(c),t.remove())}};ai_process_elements_active=!1;
+function ai_process_elements(){ai_process_elements_active||setTimeout(function(){ai_process_elements_active=!1;"function"==typeof ai_process_rotations&&ai_process_rotations();"function"==typeof ai_process_lists&&ai_process_lists(jQuery(".ai-list-data"));"function"==typeof ai_process_ip_addresses&&ai_process_ip_addresses(jQuery(".ai-ip-data"));"function"==typeof ai_process_filter_hooks&&ai_process_filter_hooks(jQuery(".ai-filter-check"));"function"==typeof ai_adb_process_blocks&&ai_adb_process_blocks()},
+5);ai_process_elements_active=!0}
+var Arrive=function(c,h,t){function n(r,d,e){b.addMethod(d,e,r.unbindEvent);b.addMethod(d,e,r.unbindEventWithSelectorOrCallback);b.addMethod(d,e,r.unbindEventWithSelectorAndCallback)}function u(r){r.arrive=l.bindEvent;n(l,r,"unbindArrive");r.leave=w.bindEvent;n(w,r,"unbindLeave")}if(c.MutationObserver&&"undefined"!==typeof HTMLElement){var y=0,b=function(){var r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector;
+return{matchesSelector:function(d,e){return d instanceof HTMLElement&&r.call(d,e)},addMethod:function(d,e,f){var a=d[e];d[e]=function(){if(f.length==arguments.length)return f.apply(this,arguments);if("function"==typeof a)return a.apply(this,arguments)}},callCallbacks:function(d,e){e&&e.options.onceOnly&&1==e.firedElems.length&&(d=[d[0]]);for(var f=0,a;a=d[f];f++)a&&a.callback&&a.callback.call(a.elem,a.elem);e&&e.options.onceOnly&&1==e.firedElems.length&&e.me.unbindEventWithSelectorAndCallback.call(e.target,
+e.selector,e.callback)},checkChildNodesRecursively:function(d,e,f,a){for(var g=0,k;k=d[g];g++)f(k,e,a)&&a.push({callback:e.callback,elem:k}),0<k.childNodes.length&&b.checkChildNodesRecursively(k.childNodes,e,f,a)},mergeArrays:function(d,e){var f={},a;for(a in d)d.hasOwnProperty(a)&&(f[a]=d[a]);for(a in e)e.hasOwnProperty(a)&&(f[a]=e[a]);return f},toElementsArray:function(d){"undefined"===typeof d||"number"===typeof d.length&&d!==c||(d=[d]);return d}}}(),v=function(){var r=function(){this._eventsBucket=
+[];this._beforeRemoving=this._beforeAdding=null};r.prototype.addEvent=function(d,e,f,a){d={target:d,selector:e,options:f,callback:a,firedElems:[]};this._beforeAdding&&this._beforeAdding(d);this._eventsBucket.push(d);return d};r.prototype.removeEvent=function(d){for(var e=this._eventsBucket.length-1,f;f=this._eventsBucket[e];e--)d(f)&&(this._beforeRemoving&&this._beforeRemoving(f),(f=this._eventsBucket.splice(e,1))&&f.length&&(f[0].callback=null))};r.prototype.beforeAdding=function(d){this._beforeAdding=
+d};r.prototype.beforeRemoving=function(d){this._beforeRemoving=d};return r}(),m=function(r,d){var e=new v,f=this,a={fireOnAttributesModification:!1};e.beforeAdding(function(g){var k=g.target;if(k===c.document||k===c)k=document.getElementsByTagName("html")[0];var p=new MutationObserver(function(x){d.call(this,x,g)});var q=r(g.options);p.observe(k,q);g.observer=p;g.me=f});e.beforeRemoving(function(g){g.observer.disconnect()});this.bindEvent=function(g,k,p){k=b.mergeArrays(a,k);for(var q=b.toElementsArray(this),
+x=0;x<q.length;x++)e.addEvent(q[x],g,k,p)};this.unbindEvent=function(){var g=b.toElementsArray(this);e.removeEvent(function(k){for(var p=0;p<g.length;p++)if(this===t||k.target===g[p])return!0;return!1})};this.unbindEventWithSelectorOrCallback=function(g){var k=b.toElementsArray(this);e.removeEvent("function"===typeof g?function(p){for(var q=0;q<k.length;q++)if((this===t||p.target===k[q])&&p.callback===g)return!0;return!1}:function(p){for(var q=0;q<k.length;q++)if((this===t||p.target===k[q])&&p.selector===
+g)return!0;return!1})};this.unbindEventWithSelectorAndCallback=function(g,k){var p=b.toElementsArray(this);e.removeEvent(function(q){for(var x=0;x<p.length;x++)if((this===t||q.target===p[x])&&q.selector===g&&q.callback===k)return!0;return!1})};return this},l=new function(){function r(f,a,g){return b.matchesSelector(f,a.selector)&&(f._id===t&&(f._id=y++),-1==a.firedElems.indexOf(f._id))?(a.firedElems.push(f._id),!0):!1}var d={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};l=new m(function(f){var a=
+{attributes:!1,childList:!0,subtree:!0};f.fireOnAttributesModification&&(a.attributes=!0);return a},function(f,a){f.forEach(function(g){var k=g.addedNodes,p=g.target,q=[];null!==k&&0<k.length?b.checkChildNodesRecursively(k,a,r,q):"attributes"===g.type&&r(p,a,q)&&q.push({callback:a.callback,elem:p});b.callCallbacks(q,a)})});var e=l.bindEvent;l.bindEvent=function(f,a,g){"undefined"===typeof g?(g=a,a=d):a=b.mergeArrays(d,a);var k=b.toElementsArray(this);if(a.existing){for(var p=[],q=0;q<k.length;q++)for(var x=
+k[q].querySelectorAll(f),z=0;z<x.length;z++)p.push({callback:g,elem:x[z]});if(a.onceOnly&&p.length)return g.call(p[0].elem,p[0].elem);setTimeout(b.callCallbacks,1,p)}e.call(this,f,a,g)};return l},w=new function(){function r(f,a){return b.matchesSelector(f,a.selector)}var d={};w=new m(function(){return{childList:!0,subtree:!0}},function(f,a){f.forEach(function(g){g=g.removedNodes;var k=[];null!==g&&0<g.length&&b.checkChildNodesRecursively(g,a,r,k);b.callCallbacks(k,a)})});var e=w.bindEvent;w.bindEvent=
+function(f,a,g){"undefined"===typeof g?(g=a,a=d):a=b.mergeArrays(d,a);e.call(this,f,a,g)};return w};h&&u(h.fn);u(HTMLElement.prototype);u(NodeList.prototype);u(HTMLCollection.prototype);u(HTMLDocument.prototype);u(Window.prototype);h={};n(l,h,"unbindAllArrive");n(w,h,"unbindAllLeave");return h}}(window,"undefined"===typeof jQuery?null:jQuery,void 0);
+var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,n){a.raw=n;return a};$jscomp.arrayIteratorImpl=function(a){var n=0;return function(){return n<a.length?{done:!1,value:a[n++]}:{done:!0}}};$jscomp.arrayIterator=function(a){return{next:$jscomp.arrayIteratorImpl(a)}};$jscomp.makeIterator=function(a){var n="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];return n?n.call(a):$jscomp.arrayIterator(a)};
+jQuery(function(a){function n(d){d=d.match(ba);return null!=d&&1<d.length&&"string"===typeof d[1]&&0<d[1].length?d[1].toLowerCase():null}function B(d){return d.includes(":")?(d=d.split(":"),1E3*(3600*parseInt(d[0])+60*parseInt(d[1])+parseInt(d[2]))):null}function t(d){try{var l=Date.parse(d);isNaN(l)&&(l=null)}catch(F){l=null}if(null==l&&d.includes(" ")){d=d.split(" ");try{l=Date.parse(d[0]),l+=B(d[1]),isNaN(l)&&(l=null)}catch(F){l=null}}return l}function G(){(jQuery("#ai-iab-tcf-bar").length||jQuery(".ai-list-manual").length)&&
+"function"==typeof __tcfapi&&"function"==typeof ai_load_blocks&&"undefined"==typeof ai_iab_tcf_callback_installed&&(__tcfapi("addEventListener",2,function(d,l){l&&"useractioncomplete"===d.eventStatus&&(ai_tcData=d,ai_load_blocks(),jQuery("#ai-iab-tcf-status").text("IAB TCF 2.0 DATA LOADED"),jQuery("#ai-iab-tcf-bar").addClass("status-ok").removeClass("status-error"))}),ai_iab_tcf_callback_installed=!0)}function u(d){d=("; "+document.cookie).split("; "+d+"=");if(2===d.length)return d.pop().split(";").shift()}
+function m(d){if(u(d)){var l=window.location.hostname;u(d)&&(document.cookie=d+"=;path=/"+(l?";domain="+l:"")+";expires=Thu, 01 Jan 1970 00:00:01 GMT");document.cookie=d+"=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;"}}Array.prototype.includes||(Array.prototype.includes=function(d){return!!~this.indexOf(d)});var ba=/:\/\/(.[^/:]+)/i;ai_process_lists=function(d){function l(e,c,k){if(0==e.length){if("!@!"==k)return!0;c!=k&&("true"==k.toLowerCase()?k=!0:"false"==k.toLowerCase()&&(k=!1));return c==
+k}if("object"!=typeof c&&"array"!=typeof c)return!1;var f=e[0];e=e.slice(1);if("*"==f)for(c=$jscomp.makeIterator(Object.entries(c)),f=c.next();!f.done;f=c.next()){if(f=$jscomp.makeIterator(f.value),f.next(),f=f.next().value,l(e,f,k))return!0}else if(f in c)return l(e,c[f],k);return!1}function F(e,c,k){if("object"!=typeof e||-1==c.indexOf("["))return!1;c=c.replace(/]| /gi,"").split("[");return l(c,e,k)}function ca(){"function"==typeof __tcfapi&&(a("#ai-iab-tcf-status").text("IAB TCF 2.0 DETECTED"),
+__tcfapi("getTCData",2,function(e,c){c?(a("#ai-iab-tcf-bar").addClass("status-ok"),"tcloaded"==e.eventStatus||"useractioncomplete"==e.eventStatus?(ai_tcData=e,e.gdprApplies?a("#ai-iab-tcf-status").text("IAB TCF 2.0 DATA LOADED"):jQuery("#ai-iab-tcf-status").text("IAB TCF 2.0 GDPR DOES NOT APPLY"),a("#ai-iab-tcf-bar").addClass("status-ok").removeClass("status-error"),setTimeout(function(){ai_process_lists()},10)):"cmpuishown"==e.eventStatus&&(ai_cmpuishown=!0,a("#ai-iab-tcf-status").text("IAB TCF 2.0 CMP UI SHOWN"),
+a("#ai-iab-tcf-bar").addClass("status-ok").removeClass("status-error"))):(a("#ai-iab-tcf-status").text("IAB TCF 2.0 __tcfapi getTCData failed"),a("#ai-iab-tcf-bar").removeClass("status-ok").addClass("status-error"))}))}function K(e){"function"==typeof __tcfapi?("undefined"==typeof ai_iab_tcf_callback_installed&&G(),"undefined"==typeof ai_tcData_requested&&(ai_tcData_requested=!0,ca(),url_parameters_need_tcData=!0)):e&&(a("#ai-iab-tcf-bar").addClass("status-error").removeClass("status-ok"),a("#ai-iab-tcf-status").text("IAB TCF 2.0 MISSING: __tcfapi function not found"))}
+d=null==d?a("div.ai-list-data, meta.ai-list-data"):d.filter(".ai-list-data");if(d.length){d.removeClass("ai-list-data");var J=document.cookie.split(";");J.forEach(function(e,c){J[c]=e.trim()});var V=getAllUrlParams(window.location.search);if(null!=V.referrer)var w=V.referrer;else w=document.referrer,""!=w&&(w=n(w));var R=window.navigator.userAgent,S=R.toLowerCase(),W=navigator.language,L=W.toLowerCase();if("undefined"!==typeof MobileDetect)var X=new MobileDetect(R);d.each(function(){var e=a(this).closest("div.code-block"),
+c=!0,k=a(this).attr("referer-list");if("undefined"!=typeof k){k=b64d(k).split(",");var f=a(this).attr("referer-list-type"),C=!1;a.each(k,function(A,g){if(""==g)return!0;if("*"==g.charAt(0))if("*"==g.charAt(g.length-1)){if(g=g.substr(1,g.length-2),-1!=w.indexOf(g))return C=!0,!1}else{if(g=g.substr(1),w.substr(-g.length)==g)return C=!0,!1}else if("*"==g.charAt(g.length-1)){if(g=g.substr(0,g.length-1),0==w.indexOf(g))return C=!0,!1}else if("#"==g){if(""==w)return C=!0,!1}else if(g==w)return C=!0,!1});
+switch(f){case "B":C&&(c=!1);break;case "W":C||(c=!1)}}if(c&&(k=a(this).attr("client-list"),"undefined"!=typeof k&&"undefined"!==typeof X))switch(k=b64d(k).split(","),f=a(this).attr("client-list-type"),r=!1,a.each(k,function(A,g){if(""==g.trim())return!0;var M=g.split("&&");a.each(M,function(da,b){var x=!0,q=!1;b=b.trim();"!!"==b.substring(0,2)&&(x=!1,b=b.substring(2));"language:"==b.substring(0,9)&&(q=!0,b=b.substring(9).toLowerCase());var p=!1;q?"*"==b.charAt(0)?"*"==b.charAt(b.length-1)?(b=b.substr(1,
+b.length-2).toLowerCase(),-1!=L.indexOf(b)&&(p=!0)):(b=b.substr(1).toLowerCase(),L.substr(-b.length)==b&&(p=!0)):"*"==b.charAt(b.length-1)?(b=b.substr(0,b.length-1).toLowerCase(),0==L.indexOf(b)&&(p=!0)):b==L&&(p=!0):"*"==b.charAt(0)?"*"==b.charAt(b.length-1)?(b=b.substr(1,b.length-2).toLowerCase(),-1!=S.indexOf(b)&&(p=!0)):(b=b.substr(1).toLowerCase(),S.substr(-b.length)==b&&(p=!0)):"*"==b.charAt(b.length-1)?(b=b.substr(0,b.length-1).toLowerCase(),0==S.indexOf(b)&&(p=!0)):X.is(b)&&(p=!0);r=p?x:!x;
+if(!r)return!1});if(r)return!1}),f){case "B":r&&(c=!1);break;case "W":r||(c=!1)}var N=k=!1;if(c){var h=a(this).attr("parameter-list");if("undefined"!=typeof h){h=b64d(h);f=a(this).attr("parameter-list-type");h=h.replace("tcf-gdpr","tcf-v2[gdprApplies]=true");h=h.replace("tcf-no-gdpr","tcf-v2[gdprApplies]=false");h=h.replace("tcf-google","tcf-v2[vendor][consents][755]=true && tcf-v2[purpose][consents][1]=true");h=h.replace("tcf-media.net","tcf-v2[vendor][consents][142]=true && tcf-v2[purpose][consents][1]=true");
+h=h.replace("tcf-amazon","tcf-v2[vendor][consents][793]=true && tcf-v2[purpose][consents][1]=true");h=h.replace("tcf-ezoic","tcf-v2[vendor][consents][347]=true && tcf-v2[purpose][consents][1]=true");h=h.split(",");var Y=[];J.forEach(function(A){A=A.split("=");try{var g=JSON.parse(decodeURIComponent(A[1]))}catch(M){g=decodeURIComponent(A[1])}Y[A[0]]=g});var r=!1,O=a(this);a.each(h,function(A,g){var M=g.split("&&");a.each(M,function(da,b){var x=!0;b=b.trim();"!!"==b.substring(0,2)&&(x=!1,b=b.substring(2));
+var q=b,p="!@!",Z=-1!=b.indexOf("["),aa=(0==b.indexOf("tcf-v2")||0==b.indexOf("euconsent-v2"))&&-1!=b.indexOf("[");-1!=b.indexOf("=")&&(p=b.split("="),q=p[0],p=p[1],Z=-1!=q.indexOf("["),aa=(0==q.indexOf("tcf-v2")||0==q.indexOf("euconsent-v2"))&&-1!=q.indexOf("["));if(aa)a("#ai-iab-tcf-bar").show(),"object"==typeof ai_tcData?(a("#ai-iab-tcf-bar").addClass("status-ok"),q=q.replace(/]| /gi,"").split("["),q.shift(),r=(q=l(q,ai_tcData,p))?x:!x):(O.addClass("ai-list-data"),N=!0,"function"==typeof __tcfapi?
+K(!1):"undefined"==typeof ai_tcData_retrying&&(ai_tcData_retrying=!0,setTimeout(function(){"function"==typeof __tcfapi?K(!1):setTimeout(function(){"function"==typeof __tcfapi?K(!1):setTimeout(function(){K(!0)},3E3)},1E3)},600)));else if(Z)r=(q=F(Y,q,p))?x:!x;else{var T=!1;"!@!"==p?J.every(function(ea){return ea.split("=")[0]==b?(T=!0,!1):!0}):T=-1!=J.indexOf(b);r=T?x:!x}if(!r)return!1});if(r)return!1});r&&(N=!1);switch(f){case "B":r&&(c=!1);break;case "W":r||(c=!1)}a(this).hasClass("ai-list-manual")&&
+(c?(O.removeClass("ai-list-data"),O.removeClass("ai-list-manual")):(k=!0,O.addClass("ai-list-data")));if(!k&&!N&&(f=a(this).data("debug-info"),"undefined"!=typeof f&&(f=a("."+f),0!=f.length))){var v=f.parent();v.hasClass("ai-debug-info")&&v.remove()}}}v=a(this).prevAll(".ai-debug-bar.ai-debug-lists");f=""==w?"#":w;v.find(".ai-debug-name.ai-list-info").text(f).attr("title",R+"\n"+W);v.find(".ai-debug-name.ai-list-status").text(c?ai_front.visible:ai_front.hidden);f=!1;if(c){var D=a(this).attr("scheduling-start");
+h=a(this).attr("scheduling-end");var H=a(this).attr("scheduling-days");if("undefined"!=typeof D&&"undefined"!=typeof h&&"undefined"!=typeof H){f=!0;var y=b64d(D),P=b64d(h),U=parseInt(a(this).attr("scheduling-fallback")),Q=parseInt(a(this).attr("gmt"));y.includes("-")||P.includes("-")?(h=t(y)+Q,D=t(P)+Q):(h=B(y),D=B(P));H=b64d(H).split(",");v=a(this).attr("scheduling-type");var z=(new Date).getTime()+Q,E=new Date(z),I=E.getDay();y.includes("-")||P.includes("-")||(y=(new Date(E.getFullYear(),E.getMonth(),
+E.getDate())).getTime()+Q,z-=y,0>z&&(z+=864E5));0==I?I=6:I--;y=z>=h&&z<D&&H.includes(I.toString());switch(v){case "B":y=!y}y||(c=!1);E=E.toISOString().split(".")[0].replace("T"," ");v=a(this).prevAll(".ai-debug-bar.ai-debug-scheduling");v.find(".ai-debug-name.ai-scheduling-info").text(E+" "+I+" current_time:"+Math.floor(z.toString()/1E3)+"  start_date:"+Math.floor(h/1E3).toString()+" ="+(z>=h).toString()+" end_date:"+Math.floor(D/1E3).toString()+" =:"+(z<D).toString()+" days:"+H.toString()+" =:"+
+H.includes(I.toString()).toString());v.find(".ai-debug-name.ai-scheduling-status").text(c?ai_front.visible:ai_front.hidden);c||0==U||(v.removeClass("ai-debug-scheduling").addClass("ai-debug-fallback"),v.find(".ai-debug-name.ai-scheduling-status").text(ai_front.fallback+"="+U))}}if(k||N)return!0;a(this).css({visibility:"",position:"",width:"",height:"","z-index":""});c?(e.css({visibility:""}),e.hasClass("ai-remove-position")&&e.css({position:""}),"undefined"!=typeof a(this).data("code")&&(c=b64d(a(this).data("code")),
+0!=a(this).closest("head").length?(a(this).after(c),a(this).remove()):a(this).append(c),ai_process_element(this))):f&&!y&&0!=U?(e.css({visibility:""}),e.hasClass("ai-remove-position")&&e.css({position:""}),a(this).next(".ai-fallback").removeClass("ai-fallback"),"undefined"!=typeof a(this).data("fallback-code")?(c=b64d(a(this).data("fallback-code")),a(this).append(c),ai_process_element(this)):(a(this).hide(),e.find(".ai-debug-block").length||e.hide()),c=e.attr("data-ai"),"undefined"!==typeof c&&!1!==
+c&&(c=a(this).attr("fallback-tracking"),"undefined"!==typeof c&&!1!==c&&e.attr("data-ai",c))):(a(this).hide(),e.find(".ai-debug-block").length||e.hide(),e.removeAttr("data-ai").removeClass("ai-track"),e.find(".ai-debug-block").length?(e.css({visibility:""}).removeClass("ai-close"),e.hasClass("ai-remove-position")&&e.css({position:""})):e.hide());a(this).attr("data-code","");a(this).attr("data-fallback-code","");e.removeClass("ai-list-block")})}};a(document).ready(function(d){setTimeout(function(){ai_process_lists();
+setTimeout(function(){G();if("function"==typeof ai_load_blocks){var l=function(F){"cmplzEnableScripts"!=F.type&&"all"!==F.consentLevel||ai_load_blocks()};jQuery(document).on("cmplzEnableScripts",l);jQuery(document).on("cmplz_event_marketing",l)}},50);jQuery(".ai-debug-page-type").dblclick(function(){jQuery("#ai-iab-tcf-status").text("CONSENT COOKIES");jQuery("#ai-iab-tcf-bar").show()});jQuery("#ai-iab-tcf-bar").click(function(){m("euconsent-v2");m("__lxG__consent__v2");m("__lxG__consent__v2_daisybit");
+m("__lxG__consent__v2_gdaisybit");m("CookieLawInfoConsent");m("cookielawinfo-checkbox-advertisement");m("cookielawinfo-checkbox-analytics");m("cookielawinfo-checkbox-necessary");m("complianz_policy_id");m("complianz_consent_status");m("cmplz_marketing");m("cmplz_consent_status");m("cmplz_preferences");m("cmplz_statistics-anonymous");m("cmplz_choice");m("moove_gdpr_popup");m("real_cookie_banner-blog:1-tcf");m("real_cookie_banner-blog:1");jQuery("#ai-iab-tcf-status").text("CONSENT COOKIES DELETED")})},
+5)})});function ai_process_element(a){setTimeout(function(){"function"==typeof ai_process_rotations_in_element&&ai_process_rotations_in_element(a);"function"==typeof ai_process_lists&&ai_process_lists(jQuery(".ai-list-data",a));"function"==typeof ai_process_ip_addresses&&ai_process_ip_addresses(jQuery(".ai-ip-data",a));"function"==typeof ai_process_filter_hooks&&ai_process_filter_hooks(jQuery(".ai-filter-check",a));"function"==typeof ai_adb_process_blocks&&ai_adb_process_blocks(a)},5)}
+function getAllUrlParams(a){var n=a?a.split("?")[1]:window.location.search.slice(1);a={};if(n){n=n.split("#")[0];n=n.split("&");for(var B=0;B<n.length;B++){var t=n[B].split("="),G=void 0,u=t[0].replace(/\[\d*\]/,function(m){G=m.slice(1,-1);return""});t="undefined"===typeof t[1]?"":t[1];u=u.toLowerCase();t=t.toLowerCase();a[u]?("string"===typeof a[u]&&(a[u]=[a[u]]),"undefined"===typeof G?a[u].push(t):a[u][G]=t):a[u]=t}}return a};
+ai_run_505969159737 = function(){
+ai_document_write=document.write;document.write=function(a){"interactive"==document.readyState?(console.error("document.write called after page load: ",a),"undefined"!=typeof ai_js_errors&&ai_js_errors.push(["document.write called after page load",a,0])):ai_document_write.call(document,a)};
+ai_insert_viewport_code ('ai-insert-10-76346600');
+};
+if (document.readyState === 'complete' || (document.readyState !== 'loading' && !document.documentElement.doScroll)) ai_run_505969159737 (); else document.addEventListener ('DOMContentLoaded', ai_run_505969159737);
+ai_js_code = true;
+
+</script>
+</body>
+
+</html>

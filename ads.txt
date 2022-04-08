@@ -32,7 +32,7 @@
 #===================
 #Ads.txt goodhealthall.com
 gourmetads.com, 6059, DIRECT
-#===================
+#====================
 adtech.com, 10713, DIRECT
 appnexus.com, 1792, RESELLER, f5ab79cb980f11d1
 rubiconproject.com, 10617, DIRECT
